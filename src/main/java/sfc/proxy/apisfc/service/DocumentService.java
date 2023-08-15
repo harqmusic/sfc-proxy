@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class DocumentService {
 
     public String getGoogleDocument(String googleUrl) {
-        return googleUrl + "SIII";
+        return "DATOS INGRESADOS" + googleUrl;
     }
 
 

@@ -18,9 +18,9 @@ public class ProxyController {
     }
 
     @GetMapping("/getGoogleDocument")
-    public String getGoogleDocument(@RequestParam String googleUrl){
+    public String getGoogleDocument(@RequestParam String googleUrl, @RequestParam String GoogleAccessId, @RequestParam String Signature){
 
-        String result = documentService.getGoogleDocument(googleUrl);
+        String result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature);
 
         return result;
     }

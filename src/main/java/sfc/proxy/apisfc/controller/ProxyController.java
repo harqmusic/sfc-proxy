@@ -38,7 +38,7 @@ public class ProxyController {
         //String result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature);
         //Blob result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature, jsonRequestString);
 
-        String googleDocumentString = documentService.getGoogleDocument2(downloadUploadRequest.getGoogleUrl());
+        String googleDocumentString = documentService.getGoogleDocument(downloadUploadRequest.getGoogleUrl());
         String fileId = documentService.uploadBinaryToGD(googleDocumentString, downloadUploadRequest.getTsec(), downloadUploadRequest.getAsoGDUrl());
 
         String result =  "OK: <br>" + downloadUploadRequest.getGoogleUrl() + "<br>";

@@ -45,10 +45,12 @@ public class DocumentService {
 
             restTemplate = new RestTemplate();
 
-            //String googleDocumentString = restTemplate.exchange(googleUrl, HttpMethod.GET, entity, byte[].class).getBody();
+            byte[] googleDocumentBytes = restTemplate.exchange(googleUrl, HttpMethod.GET, entity, byte[].class).getBody();
+
+            String encodedString = Base64.getEncoder().encodeToString(googleDocumentBytes);
 
 
-            return null;// googleDocumentString;
+            return encodedString;// googleDocumentString;
         } catch (Exception e) {
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);

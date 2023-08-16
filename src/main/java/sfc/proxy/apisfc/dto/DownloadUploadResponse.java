@@ -9,6 +9,16 @@ public class DownloadUploadResponse {
 
     private String asoGDUrl;
 
+    private String result;
+
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
     public String getGoogleUrl() {
         return googleUrl;
     }

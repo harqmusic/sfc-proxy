@@ -27,7 +27,7 @@ public class ProxyController {
     public Blob getGoogleDocument(@RequestParam String googleUrl, @RequestParam String GoogleAccessId, @RequestParam String Signature, @RequestBody String jsonRequestString){
 
         //String result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature);
-        Blob result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature, jsonRequestString);
+        Blob result = documentService.getGoogleDocument2(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature, jsonRequestString);
 
         return result;
     }
@@ -38,14 +38,20 @@ public class ProxyController {
         //String result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature);
         //Blob result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature, jsonRequestString);
 
+        String googleDocumentString = documentService.getGoogleDocument(downloadUploadRequest.getGoogleUrl());
+        String fileId = documentService.uploadBinaryToGD(googleDocumentString, downloadUploadRequest.getTsec(), downloadUploadRequest.getAsoGDUrl());
+
         String result =  "OK: <br>" + downloadUploadRequest.getGoogleUrl() + "<br>";
         result += downloadUploadRequest.getTsec() + "<br>";
         result += downloadUploadRequest.getAsoGDUrl() + "<br>";
+        result += downloadUploadRequest.getAsoGDUrl() + "fileId: " + fileId;
+
 
         DownloadUploadResponse downloadUploadResponse = new DownloadUploadResponse();
         downloadUploadResponse.setAsoGDUrl(downloadUploadRequest.getAsoGDUrl());
         downloadUploadResponse.setGoogleUrl(downloadUploadRequest.getGoogleUrl());
         downloadUploadResponse.setTsec(downloadUploadRequest.getTsec());
+        downloadUploadResponse.setResult(result);
 
         return downloadUploadResponse;
     }

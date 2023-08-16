@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import sfc.proxy.apisfc.dto.DownloadUploadRequest;
+import sfc.proxy.apisfc.dto.DownloadUploadResponse;
 import sfc.proxy.apisfc.service.DocumentService;
 
 @RestController
@@ -31,7 +33,7 @@ public class ProxyController {
     }
 
     @GetMapping("/getGoogleDocument")
-    public String getGoogleDocument(@RequestBody DownloadUploadRequest downloadUploadRequest){
+    public @ResponseBody DownloadUploadResponse getGoogleDocument(@RequestBody DownloadUploadRequest downloadUploadRequest){
 
         //String result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature);
         //Blob result = documentService.getGoogleDocument(googleUrl + "&GoogleAccessId=" + GoogleAccessId +"&Signature=" + Signature, jsonRequestString);
@@ -40,7 +42,12 @@ public class ProxyController {
         result += downloadUploadRequest.getTsec() + "<br>";
         result += downloadUploadRequest.getAsoGDUrl() + "<br>";
 
-        return result;
+        DownloadUploadResponse downloadUploadResponse = new DownloadUploadResponse();
+        downloadUploadResponse.setAsoGDUrl(downloadUploadRequest.getAsoGDUrl());
+        downloadUploadResponse.setGoogleUrl(downloadUploadRequest.getGoogleUrl());
+        downloadUploadResponse.setTsec(downloadUploadRequest.getTsec());
+
+        return downloadUploadResponse;
     }
 
 

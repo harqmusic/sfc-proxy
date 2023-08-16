@@ -51,7 +51,7 @@ public class ProxyController {
         downloadUploadResponse.setAsoGDUrl(downloadUploadRequest.getAsoGDUrl());
         downloadUploadResponse.setGoogleUrl(downloadUploadRequest.getGoogleUrl());
         downloadUploadResponse.setTsec(downloadUploadRequest.getTsec());
-        downloadUploadResponse.setResult(result);
+        downloadUploadResponse.setResult(fileId);
 
         return downloadUploadResponse;
     }

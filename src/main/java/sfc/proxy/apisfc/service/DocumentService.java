@@ -91,7 +91,7 @@ public class DocumentService {
 
     public String uploadBinaryToGD(String googleDocumentString, String tsec, String asoGDUrl) {
 
-        String result;
+        String result = "";
 
         try {
             HttpHeaders httpHeader = new HttpHeaders();
@@ -121,12 +121,15 @@ public class DocumentService {
                 else{
                     result = "respuesta nula";
                 }
+            }
+            catch (Exception ex) {
+                throw new Exception(ex);
+            }
         } catch (Exception e) {
             result += "<br>ERROR MESSAGE: " + e.getMessage();
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
             e.printStackTrace(pw);
-
             result += "<br>ERROR STACK TRACE: <br>" + sw.toString() ;            // TODO: handle exception
         }
         return result;

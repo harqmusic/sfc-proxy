@@ -13,16 +13,19 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
 import com.google.gson.Gson;
 
 import sfc.proxy.apisfc.dto.AsoResponseData;
+import sfc.proxy.apisfc.dto.DownloadUploadResponse;
 import sfc.proxy.apisfc.dto.IdFile;
 import sfc.proxy.apisfc.dto.PostGoogleRequest;
 
@@ -30,66 +33,52 @@ import sfc.proxy.apisfc.dto.PostGoogleRequest;
 public class DocumentService {
 
 
-    RestTemplate restTemplate;
 
 
-    public String getGoogleDocument(String googleUrl) {
+
+    public String getGoogleDocument(String googleUrl, DownloadUploadResponse downloadUploadResponse) {
 
 
         PostGoogleRequest requestDocument = new PostGoogleRequest();
         requestDocument.setUrl(googleUrl);
         try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-            HttpEntity <String> entity = new HttpEntity<String>(headers);
-
-            restTemplate = new RestTemplate();
-
-            byte[] googleDocumentBytes = restTemplate.exchange(googleUrl, HttpMethod.GET, entity, byte[].class).getBody();
-
-            String encodedString = Base64.getEncoder().encodeToString(googleDocumentBytes);
-
-
-            return encodedString;// googleDocumentString;
-        } catch (Exception e) {
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            e.printStackTrace(pw);
-            return "ERROR";
-        }
-    }
-
-    public String getGoogleDocument2(String googleUrl) {
-
-        String result;
-
-        try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-            HttpEntity <String> entity = new HttpEntity<String>(headers);
-
             RestTemplate restTemplate = new RestTemplate();
-            result = restTemplate.exchange(googleUrl, HttpMethod.GET, entity, String.class).getBody();
+            String encodedString;
+            ResponseEntity<byte[]> responseEntity = restTemplate.getForEntity(googleUrl, byte[].class);
 
-        } catch (Exception e) {
-            result = "<br>ERROR MESSAGE: " + e.getMessage();
+            byte[] googleDocumentBytes = responseEntity.getBody();
+            encodedString = Base64.getEncoder().encodeToString(googleDocumentBytes);
+
+            return encodedString;
+
+        } catch (HttpClientErrorException   e) {
+            e.printStackTrace();
+            if(e.getStatusCode().equals(HttpStatus.BAD_REQUEST) && e.getMessage().contains("ExpiredToken")) {
+                downloadUploadResponse.setResultStatus("UrlGoogleExpirada");
+            } else{
+                downloadUploadResponse.setResultStatus("ErrorServicioGoogle");
+            }
+            String result = "Error en respuesta de servicio de Google: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString();
+            downloadUploadResponse.setResult(result);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            downloadUploadResponse.setResultStatus("ErrorConsultaGoogle");
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
             e.printStackTrace(pw);
 
-            result += "<br>ERROR STACK TRACE: <br>" + sw.toString() ;            // TODO: handle exception
+            String result = "Error consultando Url de Google: " + e.getMessage() + ". StackTrace: " + sw.toString();
+            downloadUploadResponse.setResult(result);
         }
-        return result;
+        return "ERROR";
     }
 
-
-    public String uploadBinaryToGD(String googleDocumentString, String tsec, String asoGDUrl) {
-
-        String result = "";
-
+    public void uploadBinaryToGD(String googleDocumentString, String tsec, String asoGDUrl, DownloadUploadResponse downloadUploadResponse) {
         try {
             HttpHeaders httpHeader = new HttpHeaders();
 			httpHeader.setContentType(MediaType.MULTIPART_FORM_DATA);
+            httpHeader.set("tsec", tsec);
 
 			MultiValueMap<String, Object> body  = new LinkedMultiValueMap<>();
             byte[] bodyByteArray = Base64.getDecoder().decode(googleDocumentString.getBytes(StandardCharsets.UTF_8));
@@ -97,36 +86,35 @@ public class DocumentService {
 
             HttpEntity<MultiValueMap<String, Object>> request = new HttpEntity<>(body, httpHeader);
 
-           try {
-                RestTemplate restTemplate = new RestTemplate();
-				ResponseEntity<String> responseService = restTemplate.postForEntity(asoGDUrl, request, String.class);
-                AsoResponseData asoResponseData = new AsoResponseData();
-				if(responseService != null) {
-					if (responseService.getStatusCode().equals(HttpStatus.OK)) {
 
-                        asoResponseData = new Gson().fromJson(responseService.getBody(), AsoResponseData.class);
-					} else {
-						IdFile idFile = new IdFile();
-						idFile.setFileId("ERROR");
-						asoResponseData.setData(idFile);
-					}
-                    result = asoResponseData.getData().getFileId();
-			    }
-                else{
-                    result = "respuesta nula";
-                }
+            AsoResponseData asoResponseData = new AsoResponseData();
+            RestTemplate restTemplate = new RestTemplate();
+
+            System.out.println("PRE Consulta");
+            ResponseEntity<String> responseEntity = restTemplate.postForEntity(asoGDUrl, request, String.class);
+            asoResponseData = new Gson().fromJson(responseEntity.getBody(), AsoResponseData.class);
+            downloadUploadResponse.setResult(asoResponseData.getData().getFileId());
+
+
+         } catch (HttpClientErrorException e) {
+            e.printStackTrace();
+            if(e.getStatusCode().equals(HttpStatus.FORBIDDEN) && e.getMessage().contains("TSEC caducado")) {
+                downloadUploadResponse.setResultStatus("TSEC caducado");
+            } else {
+                downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             }
-            catch (Exception ex) {
-                throw new Exception(ex);
-            }
-        } catch (Exception e) {
-            result += "<br>ERROR MESSAGE: " + e.getMessage();
+            String result = "Error en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString();
+            downloadUploadResponse.setResult(result);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
             e.printStackTrace(pw);
-            result += "<br>ERROR STACK TRACE: <br>" + sw.toString() ;            // TODO: handle exception
+            String result = "Error cosumiendo de Gestor Documental: " + e.getMessage() + ". StackTrace: " + sw.toString();
+            downloadUploadResponse.setResult(result);
         }
-        return result;
     }
 
 }

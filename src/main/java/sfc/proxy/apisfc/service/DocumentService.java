@@ -94,7 +94,7 @@ public class DocumentService {
             ResponseEntity<String> responseEntity = restTemplate.postForEntity(asoGDUrl, request, String.class);
             asoResponseData = new Gson().fromJson(responseEntity.getBody(), AsoResponseData.class);
             downloadUploadResponse.setResult(asoResponseData.getData().getFileId());
-
+            downloadUploadResponse.setResultStatus("FILEID OK");
 
          } catch (HttpClientErrorException e) {
             e.printStackTrace();

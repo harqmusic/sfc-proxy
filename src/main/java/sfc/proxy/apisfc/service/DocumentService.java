@@ -109,7 +109,7 @@ public class DocumentService {
             } else {
                 downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             }
-            String result = "Error en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString().replace("\"","!");
+            String result = "Error 1 en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString().replace("\"","!");
             downloadUploadResponse.setResult(result);
         }
         catch (HttpServerErrorException e) {
@@ -119,7 +119,7 @@ public class DocumentService {
             } else {
                 downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             }
-            String result = "Error en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString();
+            String result = "Error 2 en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString().replace("\"","!");
             downloadUploadResponse.setResult(result);
         }
         catch (Exception e) {
@@ -128,7 +128,7 @@ public class DocumentService {
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
             e.printStackTrace(pw);
-            String result = "Error cosumiendo consumiendo servicio de Gestor Documental: " + e.getMessage() + ". StackTrace: " + sw.toString();
+            String result = "Error técnico cosumiendo consumiendo servicio de Gestor Documental: " + e.getMessage() + ". StackTrace: " + sw.toString();
             downloadUploadResponse.setResult(result);
         }
     }

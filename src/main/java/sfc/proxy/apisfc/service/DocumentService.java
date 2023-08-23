@@ -47,7 +47,9 @@ public class DocumentService {
             ResponseEntity<byte[]> responseEntity = restTemplate.getForEntity(googleUrl, byte[].class);
 
             byte[] googleDocumentBytes = responseEntity.getBody();
+            System.out.println("SIZE 1: " + googleDocumentBytes.length);
             encodedString = Base64.getEncoder().encodeToString(googleDocumentBytes);
+            System.out.println("SIZE 2: " + encodedString.length());
 
             return encodedString;
 
@@ -82,6 +84,8 @@ public class DocumentService {
 
 			MultiValueMap<String, Object> body  = new LinkedMultiValueMap<>();
             byte[] bodyByteArray = Base64.getDecoder().decode(googleDocumentString.getBytes(StandardCharsets.UTF_8));
+            Integer fileSize = bodyByteArray.length;
+            System.out.println("SIZE: " + fileSize);
 			body.add("file", bodyByteArray);
 
             HttpEntity<MultiValueMap<String, Object>> request = new HttpEntity<>(body, httpHeader);
@@ -95,6 +99,7 @@ public class DocumentService {
             asoResponseData = new Gson().fromJson(responseEntity.getBody(), AsoResponseData.class);
             downloadUploadResponse.setResult(asoResponseData.getData().getFileId());
             downloadUploadResponse.setResultStatus("FILEID OK");
+            downloadUploadResponse.setFileSize(fileSize);
 
          } catch (HttpClientErrorException e) {
             e.printStackTrace();

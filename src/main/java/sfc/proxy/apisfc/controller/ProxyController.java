@@ -3,6 +3,7 @@ package sfc.proxy.apisfc.controller;
 import java.sql.Blob;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,7 +24,7 @@ public class ProxyController {
         this.documentService = documentService;
     }
 
-    @GetMapping("/getGoogleDocument")
+    @PostMapping("/getGoogleDocument")
     public @ResponseBody DownloadUploadResponse getGoogleDocument(@RequestBody DownloadUploadRequest downloadUploadRequest){
 
         DownloadUploadResponse downloadUploadResponse = new DownloadUploadResponse();

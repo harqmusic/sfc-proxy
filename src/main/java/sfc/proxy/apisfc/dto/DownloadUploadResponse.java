@@ -11,6 +11,16 @@ public class DownloadUploadResponse {
 
     private String resultStatus;
 
+    private Integer fileSize;
+
+    public Integer getFileSize() {
+        return fileSize;
+    }
+
+    public void setFileSize(Integer fileSize) {
+        this.fileSize = fileSize;
+    }
+
     public String getResultStatus() {
         return resultStatus;
     }

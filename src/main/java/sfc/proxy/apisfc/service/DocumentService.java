@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestTemplate;
 
 import com.google.gson.Gson;
@@ -111,13 +112,23 @@ public class DocumentService {
             String result = "Error en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString();
             downloadUploadResponse.setResult(result);
         }
+        catch (HttpServerErrorException e) {
+            e.printStackTrace();
+            if(e.getStatusCode().equals(HttpStatus.FORBIDDEN) && e.getMessage().contains("TSEC caducado")) {
+                downloadUploadResponse.setResultStatus("TSEC caducado");
+            } else {
+                downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
+            }
+            String result = "Error en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString();
+            downloadUploadResponse.setResult(result);
+        }
         catch (Exception e) {
             e.printStackTrace();
             downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
             e.printStackTrace(pw);
-            String result = "Error cosumiendo de Gestor Documental: " + e.getMessage() + ". StackTrace: " + sw.toString();
+            String result = "Error cosumiendo consumiendo servicio de Gestor Documental: " + e.getMessage() + ". StackTrace: " + sw.toString();
             downloadUploadResponse.setResult(result);
         }
     }

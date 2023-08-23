@@ -109,7 +109,7 @@ public class DocumentService {
             } else {
                 downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             }
-            String result = "Error en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString();
+            String result = "Error en respuesta de servicio de Gestor Documental: " + e.getMessage() +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString().replace("\"","!");
             downloadUploadResponse.setResult(result);
         }
         catch (HttpServerErrorException e) {

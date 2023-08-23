@@ -16,7 +16,6 @@ import sfc.proxy.apisfc.dto.DownloadUploadResponse;
 import sfc.proxy.apisfc.service.DocumentService;
 
 @RestController
-@CrossOrigin(origins = "*")
 @RequestMapping("/sfcproxy")
 public class ProxyController {
 
@@ -26,6 +25,7 @@ public class ProxyController {
         this.documentService = documentService;
     }
 
+    @CrossOrigin(origins = "*")
     @PostMapping("/getGoogleDocument")
     public @ResponseBody DownloadUploadResponse getGoogleDocument(@RequestBody DownloadUploadRequest downloadUploadRequest){
 

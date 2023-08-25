@@ -125,6 +125,9 @@ public class DocumentService {
             } else if(e.getStatusCode().equals(HttpStatus.FORBIDDEN) && e.getMessage().contains("A third-party server is not responding. Possible causes: the server is down")) {
                 downloadUploadResponse.setResultStatus("ASO EN REINICIO");
             }
+            else if(e.getStatusCode().equals(HttpStatus.INTERNAL_SERVER_ERROR) && e.getMessage().contains("No se ha podido construir el TSEC")) {
+                downloadUploadResponse.setResultStatus("TSEC DE OTRO ENTORNO");
+            }
             else {
                 downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             }

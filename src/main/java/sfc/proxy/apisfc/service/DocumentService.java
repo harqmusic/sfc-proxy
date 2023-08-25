@@ -2,6 +2,7 @@ package sfc.proxy.apisfc.service;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.sql.Blob;
 import java.util.Arrays;
@@ -45,7 +46,9 @@ public class DocumentService {
         try {
             RestTemplate restTemplate = new RestTemplate();
             String encodedString;
-            ResponseEntity<byte[]> responseEntity = restTemplate.getForEntity(googleUrl, byte[].class);
+            System.out.println("URL: " + googleUrl);
+            URI uri = new URI(googleUrl);
+            ResponseEntity<byte[]> responseEntity = restTemplate.getForEntity(uri, byte[].class);
 
             byte[] googleDocumentBytes = responseEntity.getBody();
             System.out.println("SIZE 1: " + googleDocumentBytes.length);

@@ -50,6 +50,9 @@ public class DocumentService {
             byte[] googleDocumentBytes = responseEntity.getBody();
             System.out.println("SIZE 1: " + googleDocumentBytes.length);
             encodedString = Base64.getEncoder().encodeToString(googleDocumentBytes);
+            //for (int j = 0; j < encodedString.length() % 4; j++) {
+            //    encodedString = encodedString + "=";
+            //}
             System.out.println("SIZE 2: " + encodedString.length());
 
             return encodedString;
@@ -116,7 +119,10 @@ public class DocumentService {
             e.printStackTrace();
             if(e.getStatusCode().equals(HttpStatus.FORBIDDEN) && e.getMessage().contains("TSEC caducado")) {
                 downloadUploadResponse.setResultStatus("TSEC caducado");
-            } else {
+            } else if(e.getStatusCode().equals(HttpStatus.FORBIDDEN) && e.getMessage().contains("A third-party server is not responding. Possible causes: the server is down")) {
+                downloadUploadResponse.setResultStatus("ASO EN REINICIO");
+            }
+            else {
                 downloadUploadResponse.setResultStatus("ErrorServicioGestorDocumental");
             }
             String result = "Error 2 en respuesta de servicio de Gestor Documental: " + e.getMessage().replace("{", "$").replace("}", "$") +". HttpStatus: " + e.getStatusText() + " (" + e.getStatusCode().value() + ") Response:" + e.getResponseBodyAsString().replace("{", "$").replace("}", "$");

@@ -847,2465 +847,2464 @@ public class PqrCellsService {
     }
 
     public static JSONObject getTopicsAso() {
-
-        JSONObject jsonObject = new JSONObject("{" +
-                "    \"data\": [" +
-                "        {" +
-                "            \"id\": \"a0h3p00000BPPYKAA5\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente relacionada con atención de la solicitud del alivio financiero.\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Incumplimiento aplicación de alivio financiero\"" +
-                "                }," +
-                "                \"specificSubject\": \"Incumplimiento aplicación de alivio financiero\"," +
-                "                \"tooltip\": \"Antes de radicar valida en los productos y explica si ya se aplicaron los alivios financieros\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"3\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfWB7AAN\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la retención del cliente.\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Tarjeta de crédito - Cancelación TDC o retención - falencia de retención\"," +
-                "                \"tooltip\": \"Tema Call center retención\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3UAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas - Posible clonación\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - Posible clonación Atm's\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3aAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Inconformidad programa puntos\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad programa puntos\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3cAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Inconformidad Rediferidos\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad Rediferidos\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfXhEAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito relación a los Certificados Financieros\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Certificado costos Financieros\"," +
-                "                \"tooltip\": \"Validar antes de radicar si pueden entregar los certificados solicitados\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3nAAB\"," +
-                "            \"description\": \"Solicitud relacionada con el transacción de pago realizado en el caja de las oficinas.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Pago irregular en caja\"" +
-                "                }," +
-                "                \"specificSubject\": \"Consignación Duplicada\"," +
-                "                \"tooltip\": \"Valida si es posible realizar la reversión de la operación antes de radicar su petición.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"13\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3tAAB\"," +
-                "            \"description\": \"Solicitud relacionada con debito presentado en la cuenta del Cliente por motivos no establecidos o que ameriten algún tipo de investigación interna.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Descuentos injustificados\"" +
-                "                }," +
-                "                \"specificSubject\": \"Debitó automático no autorizado\"," +
-                "                \"tooltip\": \"No radiques si el descuento corresponde a un barrido para el pago de obligaciones con BBVA, explícale al cliente que se trata del pago de obligaciones contraídas con el Banco, que se encuentran en mora o domiciliadas según corresponda.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3wAAB\"," +
-                "            \"description\": \"Solicitud relacionada con la entrega parcial o total de dinero en los cajeros del Bbva administrado por la oficina.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Debitó y no entregó cajero Bbva\"," +
-                "                \"tooltip\": \"Antes de radicar, valida que la suma reclamada no haya sido reintegrada.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"9\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3zAAB\"," +
-                "            \"description\": \"Solicitud relacionada con la entrega parcial o total de dinero en los cajeros automáticos utilizados en el exterior.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Debitó y no entregó cajero internacional\"," +
-                "                \"tooltip\": \"Antes de radicar, valida que la suma reclamada no haya sido reintegrada.\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Bs0SGAAZ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad Compra - Toma de datos\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\\r\\n" + //
-                " \\r\\n" + //
-                " Validar que no tenga antecedentes en los últimos 6 meses.\\r\\n" + //
-                " Validar el Monto según el segmento.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"9\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfXyPAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Seguros\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Seguros\"," +
-                "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
-                "- No radiques si son casos de seguros de vida\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"12\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs42AAB\"," +
-                "            \"description\": \"Solicitud relacionada con la entrega parcial o total de dinero en cajeros diferentes al Bbva.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Debitó y no entregó cajero otras redes\"," +
-                "                \"tooltip\": \"Antes de radicar, valida que la suma reclamada no haya sido reintegrada.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"9\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs45AAB\"," +
-                "            \"description\": \"Solicitud relaciona pago de préstamos a través de cheques en los cajeros depositarios administrados por transportadora de valores.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Consignación errónea\"" +
-                "                }," +
-                "                \"specificSubject\": \"Consignación Depositario\"," +
-                "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
-                "\\n" + //
-                "Si fue aplicado erróneamente un depósito a un producto diferente al que el cliente dice haber solicitado; una vez hayas realizado las gestiones propias de la oficina (contacto con los clientes afectados), apóyate con el área jurídica a través de Pregúntale a D.G.\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs48AAB\"," +
-                "            \"description\": \"Solicitud relacionada con el plazo otorgado automáticamente o ajustado directamente por el cliente.\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Diferidos no conformes\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"12\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ13AAF\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"ley borron y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs4GAAR\"," +
-                "            \"description\": \"Solicitud relacionada  con la entrega al Cliente de los extractos de los créditos o tarjetas.\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"No se remite información al cliente\"" +
-                "                }," +
-                "                \"specificSubject\": \"Cliente no recibe información\"," +
-                "                \"tooltip\": \"antes de radicar, valida: \\n" + //
-                "1. Valida si tiene activa la Bbva.net o móvil\\n" + //
-                "2.. Validar sus datos personales del Cliente (No olvides seguir los protocolos de seguridad para realizar los cambios en base de persona) \\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs4QAAR\"," +
-                "            \"description\": \"Inconformidad presentada por concepto del impuesto cuatro por mil cobrado.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Gravamen movimientos financieros\"" +
-                "                }," +
-                "                \"specificSubject\": \"Impuesto cuatro por mil\"," +
-                "                \"tooltip\": \"Evita radicar validando:\\n" + //
-                "1. Que la cuenta esté marcada con exoneración del cuatro por mil o GMF (gravamen a los movimientos financieros).\\n" + //
-                "2. Que la cuenta pensional o ahorros no haya superado el límite establecido.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"3\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs4UAAR\"," +
-                "            \"description\": \"Inconformidad presentada en el proceso de compra de cartera al Bbva.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad Compra de Cartera\"," +
-                "                \"tooltip\": \"Evita radicar validando:\\n" + //
-                "1. Aclara al cliente las revisiones solicitadas \\n" + //
-                "2. Revisa las tasas cobras con sus respectivas cuotas. \\n" + //
-                "3. Revisa las fechas de liquidación.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ1EAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"ley borron y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ1HAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"ley borron y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Negativa Aprobación Crédito Ley Borrón y Cuenta Nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Negativa Aprobación Ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ1KAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"ley borron y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ1OAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"ley borron y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs4YAAR\"," +
-                "            \"description\": \"Inconformidad presentada por inconformidad con el pago mínimo que debe realizar el Cliente.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad con el pago mínimo\"," +
-                "                \"tooltip\": \"Evita radicar validando:\\n" + //
-                "1. Aclara al cliente las revisiones solicitadas \\n" + //
-                "2. Revisa las tasas cobras con sus respectivas cuotas. \\n" + //
-                "3. Revisa las fechas de liquidación.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs4dAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Inconformidad en compra internacional\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad en compra internacional Internet\"," +
-                "                \"tooltip\": \"Para todas las compras Internacionales los primeros 15 días el Cliente debe realizar su petición directamente ante el comercio (de lo contrario la franquicia no recibe realizar el contracargo)\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ1hAAF\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"ley borron y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs4lAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Inconformidad en el saldo total de la deuda\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad en el saldo total de la deuda\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs4qAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Incremento en el valor de los intereses\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Incremento en el valor de los intereses\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ26AAF\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"ley borron y cuenta nueva puntaje buro\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Negativa Aprobación Crédito Ley Borrón y Cuenta Nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Negativa Aprobación Ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ2WAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto relacionadas con la Ley de borron y cuenta nueva\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
-                "                }," +
-                "                \"specificSubject\": \"Procedimienyo y honorarios de cobranza ley borron y cuenta nueva\"," +
-                "                \"tooltip\": \"procedimientos y honorarios de cobranza ley borron y cuenta nueva\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs57AAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Información sujeta a reserva\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Información sujeta a reserva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Información sujeta a reserva\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs5FAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a SIPLA con relación a la Lavado de activos\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"SARLAFT\"" +
-                "                }," +
-                "                \"specificSubject\": \"Lavado de activos\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ2rAAF\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente relacionadas con publicidad engañosa relacionada con la ley de borron y cuenta nueva.\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"Publicidad Engañosa Ley de borrón y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Publicidad Engañosa Ley de borrón y cuenta nueva\"" +
-                "                }," +
-                "                \"specificSubject\": \"Publicidad Engañosa Ley de borrón y cuenta nueva\"," +
-                "                \"tooltip\": \"\\\"• Incumplimiento en lo ofrecido por el banco. \\r\\n" + //
-                "• Información insuficiente. \\r\\n" + //
-                "• Información errada. \\r\\n" + //
-                "• Mala venta oficina. \\r\\n" + //
-                "• Mala venta comercializadora. \\r\\n" + //
-                "• Mala venta Call Center. \\r\\n" + //
-                "• Mala venta canales virtuales. \\r\\n" + //
-                "•\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ2uAAF\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto relacionadas con la Ley de borron y cuenta nueva\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"Incumplimiento acuerdo de pago por Banco Ley borrón y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
-                "                }," +
-                "                \"specificSubject\": \"Incumplimiento acuerdo de pago por Banco Ley borrón y cuenta nueva\"," +
-                "                \"tooltip\": \"procedimientos y honorarios de cobranza ley borron y cuenta nueva\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs5MAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Incumplimiento de condiciones aspectos contractuales\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Incumplimiento de condiciones aspectos contractuales\"" +
-                "                }," +
-                "                \"specificSubject\": \"Incumplimiento de condiciones aspectos contractuales\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"13\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs5ZAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Consignación errónea con relación a la Pago mal aplicado\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Consignación errónea\"" +
-                "                }," +
-                "                \"specificSubject\": \"Pago mal aplicado\"," +
-                "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
-                "\\n" + //
-                "Si fue aplicado erróneamente un depósito a un producto diferente al que el cliente dice haber solicitado; una vez hayas realizado las gestiones propias de la oficina (contacto con los clientes afectados), apóyate con el área jurídica a través de Pregúntale a D.G.\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ30AAF\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto relacionadas con la Ley de borron y cuenta nueva\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"Propuesta de negociación o acuerdo Ley de borrón y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
-                "                }," +
-                "                \"specificSubject\": \"Propuesta de negociación o acuerdo Ley de borrón y cuenta nueva\"," +
-                "                \"tooltip\": \"procedimientos y honorarios de cobranza ley borron y cuenta nueva. Propuesta de negociación o acuerdo Ley de borrón y cuenta nueva\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs5nAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Reestructuración de créditos con relación a la Reestructuración deuda\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reestructuración deuda\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"13\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs5pAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Reversión y anulación de transacciones\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Revisión y/o liquidación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reversión y anulación de transacciones\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"12\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ3LAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente o usuarios referente a la indebida atención relacionado con  la Demora en la Tramitación Ley borrón y cuenta nueva\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"Servicio brindado en casas de cobranza Ley borrón y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Indebida atención\"" +
-                "                }," +
-                "                \"specificSubject\": \"Servicio brindado en casas de cobranza Ley borrón y cuenta nueva\"," +
-                "                \"tooltip\": \"\\\"• Cliente Al día efectúan gestión de cobranza. \\r\\n" + //
-                "• La contabilización del acuerdo de pago no es oportuna. \\r\\n" + //
-                "• Inadecuada gestión o información suministrada por la casa de cobranza. \\r\\n" + //
-                "• Inconformidad con los horarios de cobranza.\\r\\n" + //
-                "• inconformidad con gestión de cobranza a terceros.\\r\\n" + //
-                "• inconformidad en la gestión de cobranza efectuada servicio\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ3TAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente o usuarios referente a la indebida atención relacionado con  la Demora en la Tramitación Ley borrón y cuenta nueva\"," +
-                "            \"requireMovements\": false," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"Demora en la Tramitación Ley borrón y cuenta nueva\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Indebida atención\"" +
-                "                }," +
-                "                \"specificSubject\": \"Demora  Tramitación Ley borrón y cuenta nueva\"," +
-                "                \"tooltip\": \"Demora en la Tramitación Ley borrón y cuenta nueva\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"4\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ98AAF\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente relacionadas con productos digitales\"," +
-                "            \"requireMovements\": true," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"Suplantación productos digitales\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Suplantación presunta de persona\"" +
-                "                }," +
-                "                \"specificSubject\": \"Suplantación productos digitales\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"11\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A22OOAAZ-a0d3p000006B7GYAA0\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"1. ¿Recibió ayuda de terceros cuando se encontraba tranzando en el cajero automático? De ser así, solicitar indicar la ubicación del cajero de nuestra red u otras redes en las que ocurrió lo anterior, así como también la hora aproximada de estos hechos. Validar el número del plástico que el cliente tiene en su poder en ese momento?\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6DAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Su Plantación presunta de persona\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Suplantación presunta de persona\"" +
-                "                }," +
-                "                \"specificSubject\": \"Suplantación presunta de persona\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo del producto y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6NAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Inadecuado suministro de información en la vinculación\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Inadecuado suministro de información en la vinculación\"" +
-                "                }," +
-                "                \"specificSubject\": \"Suministro de información insuficiente o errada\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"11\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BfZ9WAAV\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente relacionadas con hurto por celular\"," +
-                "            \"requireMovements\": true," +
-                "            \"keywords\": [" +
-                "                {" +
-                "                    \"value\": \"hurto por celular\"" +
-                "                }" +
-                "            ]," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Hurto\"" +
-                "                }," +
-                "                \"specificSubject\": \"Hurto Celular\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"11\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs2IAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas por páginas diferentes a BBVA Net\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas por páginas diferentes a BBVA Net\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"2\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs2NAAR\"," +
-                "            \"description\": \"Solicitud relacionada con el cobro de comisión de retiro en Atm's ó cobro de cuotas de manejo ó comisiones de créditos.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cobro servicios o comisiones\"" +
-                "                }," +
-                "                \"specificSubject\": \"Cobro servicios o comisiones\"," +
-                "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
-                "\\n" + //
-                "1. Si los beneficios naturales del producto, ya vencieron. \\n" + //
-                "2. Él portafolio nómina y que reciba los abonos recurrentes.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"3\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6YAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacción cargada doblemente\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacción cargada doblemente en Internet\"," +
-                "                \"tooltip\": \"Valida los movimientos antes de radicar\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6bAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas - Cambiazo\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - Cambiazo Atm's\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6gAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas - Cambiazo\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - Cambiazo Internet\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"13\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs2WAAR\"," +
-                "            \"description\": \"Inconformidad presentada por la utilización de medios de pagos del Banco al realizar compras en los establecimientos.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad Compra en Internet\"," +
-                "                \"tooltip\": \"valida los movimiento antes de radicar\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs2eAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Pago debitado y no aplicado\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Pago debitado y no aplicado Internet\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6jAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas - hurto o pérdida\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - hurto o pérdida  Atm's\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6mAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas - hurto o pérdida\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - hurto o pérdida Internet\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs6pAAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas en BBVA NET\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas en BBVA Net\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"10\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs2tAAB\"," +
-                "            \"description\": \"Inconformidad presentada durante el proceso de cobro de honorario de cobranza o incumplimiento de acuerdos de pago por parte del Banco o eventos presentados por venta de cartera.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
-                "                }," +
-                "                \"specificSubject\": \"Gestión de Cobranza\"," +
-                "                \"tooltip\": \"Evita radicar si el Cliente presentó mora y explícale la generación de honorarios por cobro prejurídico.\\n" + //
-                "Recuerda que en leasing habitacional y crédito hipotecario, se generan honorarios cuando se ha presentado cobro jurídico.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"10\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs2xAAB\"," +
-                "            \"description\": \"Solicitud presentada con el proceso de activación de las tarjetas\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Bloqueo de productos\"" +
-                "                }," +
-                "                \"specificSubject\": \"Activación de tarjeta\"," +
-                "                \"tooltip\": \"No radiques si se evidencia una “retención manual oficina \\\" en cuenta de ahorros o corriente, contacta al Cliente con su oficina gestora para que le suministren los motivos del bloqueo.\\n" + //
-                "\\n" + //
-                "Si el Cliente solicita información de un embargo, válida en el sistema el ente que lo ordenó e invitalo a dirigirse a dicha entidad - No se debe radicar la Petición.\\n" + //
-                "\\n" + //
-                "Si se trata de entrega de oficios de embargo o desembargo de saldos, se deben gestionar por el circuito establecido a través del buzón embargos.colombia@bbva.com\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs73AAB\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Procedimientos y honorarios de cobranza con relación a la Venta de Cartera\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
-                "                }," +
-                "                \"specificSubject\": \"Venta de Cartera\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs7AAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Vinculación presuntamente fraudulenta.\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Vinculación presuntamente fraudulenta\"" +
-                "                }," +
-                "                \"specificSubject\": \"Vinculación presuntamente fraudulenta\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3AAAR\"," +
-                "            \"description\": \"Inconformidad presentada por la entrega de billetes falsos a través del cajero automático del Bbva.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Billetes falsos en Atm's\"," +
-                "                \"tooltip\": \"No solicites la radicación si la reclamación es por billete falso entregado por ventanilla, recuérdale al cliente que antes de retirarse de la ventanilla debe validar calidad y cantidad de lo entregado.\\n" + //
-                "\\n" + //
-                "\\n" + //
-                "Si el retiro fue en ATM, anexa copia del billete y no olvides enviar el billete a Caja Central.\"" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3BAAR\"," +
-                "            \"description\": \"Inconformidad presentada durante proceso de bloqueo tarjeta por cambio, pérdida etc.\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Bloqueo de productos\"" +
-                "                }," +
-                "                \"specificSubject\": \"Bloqueo de tarjeta\"," +
-                "                \"tooltip\": \"No radiques si se evidencia una “retención manual oficina \\\" en cuenta de ahorros o corriente, contacta al Cliente con su oficina gestora para que le suministren los motivos del bloqueo.\\n" + //
-                "\\n" + //
-                "Si el Cliente solicita información de un embargo, válida en el sistema el ente que lo ordenó e invitalo a dirigirse a dicha entidad - No se debe radicar la Petición.\\n" + //
-                "\\n" + //
-                "Si se trata de entrega de oficios de embargo o desembargo de saldos, se deben gestionar por el circuito establecido a través del buzón embargos.colombia@bbva.com\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"11\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3IAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Actualización, Autorización para consultas, Calificación de Cartera, Prescripción de la Obligación.\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Reporte centrales de riesgos\"" +
-                "                }," +
-                "                \"specificSubject\": \"Reporte centrales de riesgos\"," +
-                "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
-                "\\n" + //
-                "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
-                "\\n" + //
-                "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
-                "\\n" + //
-                "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"11\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzGxAAJ\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Cuenta de ahorro referente a Negación en la apertura o solicitud del producto\"," +
-                "            \"requireMovements\": false," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Negación en la apertura o solicitud del producto\"" +
-                "                }," +
-                "                \"specificSubject\": \"Negación del producto\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"12\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3MAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a BBVA Móvil con relación a la Transacciones no reconocidas\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"BBVA Móvil\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas Móvil\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000Brs3PAAR\"," +
-                "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas Atm's\"," +
-                "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzHlAAJ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Datáfono\"" +
-                "                }," +
-                "                \"specificSubject\": \"Inconformidad Compra en Datáfono - Toma de datos\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzQxAAJ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Debitó y no entregó BBVA - Toma de datos\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"15\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzR7AAJ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Debitó y no entregó otras redes - Toma de datos\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"13\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzRMAAZ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Datáfono\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacción cargada doblemente - Toma de datos Datáfono\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"13\"" +
-                "                }" +
-                "            }" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzRWAAZ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Cajero automático\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - Toma de datos Cajero automático\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"10\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzRbAAJ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"Internet\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - Toma de datos Internet\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"14\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }," +
-                "        {" +
-                "            \"id\": \"a0h3p00000BrzRgAAJ\"," +
-                "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "            \"requireMovements\": true," +
-                "            \"issue\": {" +
-                "                \"issueType\": {" +
-                "                    \"id\": \"BBVA Móvil\"" +
-                "                }," +
-                "                \"specificSubject\": \"Transacciones no reconocidas - Toma de datos BBVA Movil\"," +
-                "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
-                "                \"ranking\": {" +
-                "                    \"value\": \"12\"" +
-                "                }" +
-                "            }," +
-                "            \"forms\": [" +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
-                "3. Formato Radicación PQR Suplantación Productos Online\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
-                "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
-                "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
-                "                    \"formType\": \"03\"," +
-                "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
-                "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
-                "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
-                "(Si marco SI: indique el o los canales entre:\\r\\n" + //
-                "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
-                "- Otros pagos )\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
-                "                    \"formType\": \"02\"," +
-                "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
-                "                }," +
-                "                {" +
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
-                "                    \"formType\": \"01\"," +
-                "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
-                "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
-                "                }" +
-                "            ]" +
-                "        }" +
-                "    ]" +
-                "}" +
-                "");
+        String parteA = "{" +
+        "    \"data\": [" +
+        "        {" +
+        "            \"id\": \"a0h3p00000BPPYKAA5\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente relacionada con atención de la solicitud del alivio financiero.\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Incumplimiento aplicación de alivio financiero\"" +
+        "                }," +
+        "                \"specificSubject\": \"Incumplimiento aplicación de alivio financiero\"," +
+        "                \"tooltip\": \"Antes de radicar valida en los productos y explica si ya se aplicaron los alivios financieros\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"3\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfWB7AAN\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la retención del cliente.\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Tarjeta de crédito - Cancelación TDC o retención - falencia de retención\"," +
+        "                \"tooltip\": \"Tema Call center retención\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3UAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas - Posible clonación\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - Posible clonación Atm's\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3aAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Inconformidad programa puntos\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad programa puntos\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3cAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Inconformidad Rediferidos\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad Rediferidos\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfXhEAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito relación a los Certificados Financieros\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Certificado costos Financieros\"," +
+        "                \"tooltip\": \"Validar antes de radicar si pueden entregar los certificados solicitados\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3nAAB\"," +
+        "            \"description\": \"Solicitud relacionada con el transacción de pago realizado en el caja de las oficinas.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Pago irregular en caja\"" +
+        "                }," +
+        "                \"specificSubject\": \"Consignación Duplicada\"," +
+        "                \"tooltip\": \"Valida si es posible realizar la reversión de la operación antes de radicar su petición.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"13\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3tAAB\"," +
+        "            \"description\": \"Solicitud relacionada con debito presentado en la cuenta del Cliente por motivos no establecidos o que ameriten algún tipo de investigación interna.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Descuentos injustificados\"" +
+        "                }," +
+        "                \"specificSubject\": \"Debitó automático no autorizado\"," +
+        "                \"tooltip\": \"No radiques si el descuento corresponde a un barrido para el pago de obligaciones con BBVA, explícale al cliente que se trata del pago de obligaciones contraídas con el Banco, que se encuentran en mora o domiciliadas según corresponda.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3wAAB\"," +
+        "            \"description\": \"Solicitud relacionada con la entrega parcial o total de dinero en los cajeros del Bbva administrado por la oficina.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Debitó y no entregó cajero Bbva\"," +
+        "                \"tooltip\": \"Antes de radicar, valida que la suma reclamada no haya sido reintegrada.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"9\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3zAAB\"," +
+        "            \"description\": \"Solicitud relacionada con la entrega parcial o total de dinero en los cajeros automáticos utilizados en el exterior.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Debitó y no entregó cajero internacional\"," +
+        "                \"tooltip\": \"Antes de radicar, valida que la suma reclamada no haya sido reintegrada.\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Bs0SGAAZ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad Compra - Toma de datos\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\\r\\n" + //
+        " \\r\\n" + //
+        " Validar que no tenga antecedentes en los últimos 6 meses.\\r\\n" + //
+        " Validar el Monto según el segmento.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"9\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfXyPAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Seguros\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Seguros\"," +
+        "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
+        "- No radiques si son casos de seguros de vida\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"12\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs42AAB\"," +
+        "            \"description\": \"Solicitud relacionada con la entrega parcial o total de dinero en cajeros diferentes al Bbva.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Debitó y no entregó cajero otras redes\"," +
+        "                \"tooltip\": \"Antes de radicar, valida que la suma reclamada no haya sido reintegrada.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"9\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs45AAB\"," +
+        "            \"description\": \"Solicitud relaciona pago de préstamos a través de cheques en los cajeros depositarios administrados por transportadora de valores.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Consignación errónea\"" +
+        "                }," +
+        "                \"specificSubject\": \"Consignación Depositario\"," +
+        "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
+        "\\n" + //
+        "Si fue aplicado erróneamente un depósito a un producto diferente al que el cliente dice haber solicitado; una vez hayas realizado las gestiones propias de la oficina (contacto con los clientes afectados), apóyate con el área jurídica a través de Pregúntale a D.G.\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs48AAB\"," +
+        "            \"description\": \"Solicitud relacionada con el plazo otorgado automáticamente o ajustado directamente por el cliente.\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Diferidos no conformes\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"12\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ13AAF\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"ley borron y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs4GAAR\"," +
+        "            \"description\": \"Solicitud relacionada  con la entrega al Cliente de los extractos de los créditos o tarjetas.\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"No se remite información al cliente\"" +
+        "                }," +
+        "                \"specificSubject\": \"Cliente no recibe información\"," +
+        "                \"tooltip\": \"antes de radicar, valida: \\n" + //
+        "1. Valida si tiene activa la Bbva.net o móvil\\n" + //
+        "2.. Validar sus datos personales del Cliente (No olvides seguir los protocolos de seguridad para realizar los cambios en base de persona) \\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs4QAAR\"," +
+        "            \"description\": \"Inconformidad presentada por concepto del impuesto cuatro por mil cobrado.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Gravamen movimientos financieros\"" +
+        "                }," +
+        "                \"specificSubject\": \"Impuesto cuatro por mil\"," +
+        "                \"tooltip\": \"Evita radicar validando:\\n" + //
+        "1. Que la cuenta esté marcada con exoneración del cuatro por mil o GMF (gravamen a los movimientos financieros).\\n" + //
+        "2. Que la cuenta pensional o ahorros no haya superado el límite establecido.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"3\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs4UAAR\"," +
+        "            \"description\": \"Inconformidad presentada en el proceso de compra de cartera al Bbva.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad Compra de Cartera\"," +
+        "                \"tooltip\": \"Evita radicar validando:\\n" + //
+        "1. Aclara al cliente las revisiones solicitadas \\n" + //
+        "2. Revisa las tasas cobras con sus respectivas cuotas. \\n" + //
+        "3. Revisa las fechas de liquidación.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ1EAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"ley borron y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ1HAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"ley borron y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Negativa Aprobación Crédito Ley Borrón y Cuenta Nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Negativa Aprobación Ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ1KAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"ley borron y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ1OAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"ley borron y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs4YAAR\"," +
+        "            \"description\": \"Inconformidad presentada por inconformidad con el pago mínimo que debe realizar el Cliente.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad con el pago mínimo\"," +
+        "                \"tooltip\": \"Evita radicar validando:\\n" + //
+        "1. Aclara al cliente las revisiones solicitadas \\n" + //
+        "2. Revisa las tasas cobras con sus respectivas cuotas. \\n" + //
+        "3. Revisa las fechas de liquidación.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs4dAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Inconformidad en compra internacional\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad en compra internacional Internet\"," +
+        "                \"tooltip\": \"Para todas las compras Internacionales los primeros 15 días el Cliente debe realizar su petición directamente ante el comercio (de lo contrario la franquicia no recibe realizar el contracargo)\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ1hAAF\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"ley borron y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Reporte Centrales de Riesgo - Ley Borrón y Cuenta Nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reporte centrales de riesgos - Ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs4lAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Inconformidad en el saldo total de la deuda\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad en el saldo total de la deuda\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs4qAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Incremento en el valor de los intereses\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Incremento en el valor de los intereses\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ26AAF\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente teniendo en cuenta la Ley de borrón y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"ley borron y cuenta nueva puntaje buro\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Negativa Aprobación Crédito Ley Borrón y Cuenta Nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Negativa Aprobación Ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ2WAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto relacionadas con la Ley de borron y cuenta nueva\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
+        "                }," +
+        "                \"specificSubject\": \"Procedimienyo y honorarios de cobranza ley borron y cuenta nueva\"," +
+        "                \"tooltip\": \"procedimientos y honorarios de cobranza ley borron y cuenta nueva\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs57AAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Información sujeta a reserva\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Información sujeta a reserva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Información sujeta a reserva\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs5FAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a SIPLA con relación a la Lavado de activos\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"SARLAFT\"" +
+        "                }," +
+        "                \"specificSubject\": \"Lavado de activos\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ2rAAF\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente relacionadas con publicidad engañosa relacionada con la ley de borron y cuenta nueva.\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"Publicidad Engañosa Ley de borrón y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Publicidad Engañosa Ley de borrón y cuenta nueva\"" +
+        "                }," +
+        "                \"specificSubject\": \"Publicidad Engañosa Ley de borrón y cuenta nueva\"," +
+        "                \"tooltip\": \"\\\"• Incumplimiento en lo ofrecido por el banco. \\r\\n" + //
+        "• Información insuficiente. \\r\\n" + //
+        "• Información errada. \\r\\n" + //
+        "• Mala venta oficina. \\r\\n" + //
+        "• Mala venta comercializadora. \\r\\n" + //
+        "• Mala venta Call Center. \\r\\n" + //
+        "• Mala venta canales virtuales. \\r\\n" + //
+        "•\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ2uAAF\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto relacionadas con la Ley de borron y cuenta nueva\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"Incumplimiento acuerdo de pago por Banco Ley borrón y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
+        "                }," +
+        "                \"specificSubject\": \"Incumplimiento acuerdo de pago por Banco Ley borrón y cuenta nueva\"," +
+        "                \"tooltip\": \"procedimientos y honorarios de cobranza ley borron y cuenta nueva\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs5MAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Incumplimiento de condiciones aspectos contractuales\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Incumplimiento de condiciones aspectos contractuales\"" +
+        "                }," +
+        "                \"specificSubject\": \"Incumplimiento de condiciones aspectos contractuales\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"13\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs5ZAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Consignación errónea con relación a la Pago mal aplicado\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Consignación errónea\"" +
+        "                }," +
+        "                \"specificSubject\": \"Pago mal aplicado\"," +
+        "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
+        "\\n" + //
+        "Si fue aplicado erróneamente un depósito a un producto diferente al que el cliente dice haber solicitado; una vez hayas realizado las gestiones propias de la oficina (contacto con los clientes afectados), apóyate con el área jurídica a través de Pregúntale a D.G.\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ30AAF\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto relacionadas con la Ley de borron y cuenta nueva\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"Propuesta de negociación o acuerdo Ley de borrón y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
+        "                }," +
+        "                \"specificSubject\": \"Propuesta de negociación o acuerdo Ley de borrón y cuenta nueva\"," +
+        "                \"tooltip\": \"procedimientos y honorarios de cobranza ley borron y cuenta nueva. Propuesta de negociación o acuerdo Ley de borrón y cuenta nueva\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs5nAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Reestructuración de créditos con relación a la Reestructuración deuda\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reestructuración deuda\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"13\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs5pAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Revisión y/o liquidación con relación a la Reversión y anulación de transacciones\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Revisión y/o liquidación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reversión y anulación de transacciones\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"12\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ3LAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente o usuarios referente a la indebida atención relacionado con  la Demora en la Tramitación Ley borrón y cuenta nueva\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"Servicio brindado en casas de cobranza Ley borrón y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Indebida atención\"" +
+        "                }," +
+        "                \"specificSubject\": \"Servicio brindado en casas de cobranza Ley borrón y cuenta nueva\"," +
+        "                \"tooltip\": \"\\\"• Cliente Al día efectúan gestión de cobranza. \\r\\n" + //
+        "• La contabilización del acuerdo de pago no es oportuna. \\r\\n" + //
+        "• Inadecuada gestión o información suministrada por la casa de cobranza. \\r\\n" + //
+        "• Inconformidad con los horarios de cobranza.\\r\\n" + //
+        "• inconformidad con gestión de cobranza a terceros.\\r\\n" + //
+        "• inconformidad en la gestión de cobranza efectuada servicio\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ3TAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente o usuarios referente a la indebida atención relacionado con  la Demora en la Tramitación Ley borrón y cuenta nueva\"," +
+        "            \"requireMovements\": false," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"Demora en la Tramitación Ley borrón y cuenta nueva\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Indebida atención\"" +
+        "                }," +
+        "                \"specificSubject\": \"Demora  Tramitación Ley borrón y cuenta nueva\"," +
+        "                \"tooltip\": \"Demora en la Tramitación Ley borrón y cuenta nueva\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"4\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ98AAF\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente relacionadas con productos digitales\"," +
+        "            \"requireMovements\": true," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"Suplantación productos digitales\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Suplantación presunta de persona\"" +
+        "                }," +
+        "                \"specificSubject\": \"Suplantación productos digitales\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"11\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A22OOAAZ-a0d3p000006B7GYAA0\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"1. ¿Recibió ayuda de terceros cuando se encontraba tranzando en el cajero automático? De ser así, solicitar indicar la ubicación del cajero de nuestra red u otras redes en las que ocurrió lo anterior, así como también la hora aproximada de estos hechos. Validar el número del plástico que el cliente tiene en su poder en ese momento?\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6DAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Su Plantación presunta de persona\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Suplantación presunta de persona\"" +
+        "                }," +
+        "                \"specificSubject\": \"Suplantación presunta de persona\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo del producto y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6NAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Inadecuado suministro de información en la vinculación\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Inadecuado suministro de información en la vinculación\"" +
+        "                }," +
+        "                \"specificSubject\": \"Suministro de información insuficiente o errada\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"11\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BfZ9WAAV\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente relacionadas con hurto por celular\"," +
+        "            \"requireMovements\": true," +
+        "            \"keywords\": [" +
+        "                {" +
+        "                    \"value\": \"hurto por celular\"" +
+        "                }" +
+        "            ]," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Hurto\"" +
+        "                }," +
+        "                \"specificSubject\": \"Hurto Celular\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"11\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs2IAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas por páginas diferentes a BBVA Net\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas por páginas diferentes a BBVA Net\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"2\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs2NAAR\"," +
+        "            \"description\": \"Solicitud relacionada con el cobro de comisión de retiro en Atm's ó cobro de cuotas de manejo ó comisiones de créditos.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cobro servicios o comisiones\"" +
+        "                }," +
+        "                \"specificSubject\": \"Cobro servicios o comisiones\"," +
+        "                \"tooltip\": \"Antes de radicar, válida :\\n" + //
+        "\\n" + //
+        "1. Si los beneficios naturales del producto, ya vencieron. \\n" + //
+        "2. Él portafolio nómina y que reciba los abonos recurrentes.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"3\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6YAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacción cargada doblemente\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacción cargada doblemente en Internet\"," +
+        "                \"tooltip\": \"Valida los movimientos antes de radicar\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6bAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas - Cambiazo\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - Cambiazo Atm's\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\",";
+        String parteB =                 "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6gAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas - Cambiazo\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - Cambiazo Internet\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"13\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs2WAAR\"," +
+        "            \"description\": \"Inconformidad presentada por la utilización de medios de pagos del Banco al realizar compras en los establecimientos.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad Compra en Internet\"," +
+        "                \"tooltip\": \"valida los movimiento antes de radicar\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs2eAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Pago debitado y no aplicado\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Pago debitado y no aplicado Internet\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6jAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas - hurto o pérdida\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - hurto o pérdida  Atm's\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6mAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas - hurto o pérdida\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - hurto o pérdida Internet\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs6pAAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Internet con relación a la Transacciones no reconocidas en BBVA NET\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas en BBVA Net\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"10\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs2tAAB\"," +
+        "            \"description\": \"Inconformidad presentada durante el proceso de cobro de honorario de cobranza o incumplimiento de acuerdos de pago por parte del Banco o eventos presentados por venta de cartera.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
+        "                }," +
+        "                \"specificSubject\": \"Gestión de Cobranza\"," +
+        "                \"tooltip\": \"Evita radicar si el Cliente presentó mora y explícale la generación de honorarios por cobro prejurídico.\\n" + //
+        "Recuerda que en leasing habitacional y crédito hipotecario, se generan honorarios cuando se ha presentado cobro jurídico.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"10\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs2xAAB\"," +
+        "            \"description\": \"Solicitud presentada con el proceso de activación de las tarjetas\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Bloqueo de productos\"" +
+        "                }," +
+        "                \"specificSubject\": \"Activación de tarjeta\"," +
+        "                \"tooltip\": \"No radiques si se evidencia una “retención manual oficina \\\" en cuenta de ahorros o corriente, contacta al Cliente con su oficina gestora para que le suministren los motivos del bloqueo.\\n" + //
+        "\\n" + //
+        "Si el Cliente solicita información de un embargo, válida en el sistema el ente que lo ordenó e invitalo a dirigirse a dicha entidad - No se debe radicar la Petición.\\n" + //
+        "\\n" + //
+        "Si se trata de entrega de oficios de embargo o desembargo de saldos, se deben gestionar por el circuito establecido a través del buzón embargos.colombia@bbva.com\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs73AAB\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Procedimientos y honorarios de cobranza con relación a la Venta de Cartera\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Procedimientos y honorarios de cobranza\"" +
+        "                }," +
+        "                \"specificSubject\": \"Venta de Cartera\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs7AAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Vinculación presuntamente fraudulenta.\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Vinculación presuntamente fraudulenta\"" +
+        "                }," +
+        "                \"specificSubject\": \"Vinculación presuntamente fraudulenta\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3AAAR\"," +
+        "            \"description\": \"Inconformidad presentada por la entrega de billetes falsos a través del cajero automático del Bbva.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Billetes falsos en Atm's\"," +
+        "                \"tooltip\": \"No solicites la radicación si la reclamación es por billete falso entregado por ventanilla, recuérdale al cliente que antes de retirarse de la ventanilla debe validar calidad y cantidad de lo entregado.\\n" + //
+        "\\n" + //
+        "\\n" + //
+        "Si el retiro fue en ATM, anexa copia del billete y no olvides enviar el billete a Caja Central.\"" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3BAAR\"," +
+        "            \"description\": \"Inconformidad presentada durante proceso de bloqueo tarjeta por cambio, pérdida etc.\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Bloqueo de productos\"" +
+        "                }," +
+        "                \"specificSubject\": \"Bloqueo de tarjeta\"," +
+        "                \"tooltip\": \"No radiques si se evidencia una “retención manual oficina \\\" en cuenta de ahorros o corriente, contacta al Cliente con su oficina gestora para que le suministren los motivos del bloqueo.\\n" + //
+        "\\n" + //
+        "Si el Cliente solicita información de un embargo, válida en el sistema el ente que lo ordenó e invitalo a dirigirse a dicha entidad - No se debe radicar la Petición.\\n" + //
+        "\\n" + //
+        "Si se trata de entrega de oficios de embargo o desembargo de saldos, se deben gestionar por el circuito establecido a través del buzón embargos.colombia@bbva.com\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"11\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3IAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto tarjeta de crédito referente a Actualización, Autorización para consultas, Calificación de Cartera, Prescripción de la Obligación.\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Reporte centrales de riesgos\"" +
+        "                }," +
+        "                \"specificSubject\": \"Reporte centrales de riesgos\"," +
+        "                \"tooltip\": \"No radiques casos por buro/puntaje, indícale al Cliente que el Banco no provee puntajes a las centrales de información financiera; nuestra entidad solo reporta el hábito de pago del cliente y su calificación.\\n" + //
+        "\\n" + //
+        "Si el cliente reclama por reporte generado por mora, identifica el producto y valida si efectivamente presentó mora e indícale que el reporte es acorde.\\n" + //
+        "\\n" + //
+        "\\\"Es obligatorio la autorización escrita del cliente para proceder con la consulta ante las centrales de información. para el call center se deben conservar el audio de autorización\\\"\\n" + //
+        "\\n" + //
+        "Se ha habilitado la compatibilidad con lectores de pantalla.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"11\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0e3p00000A2VERAA3-a0d3p000006BBi9AAG\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"Señor (a) Cliente, autoriza Usted a BBVA Colombia o a quien represente sus derechos, para que consulte, actualice y divulgue en las centrales de información del sector financiero y cualquier otra entidad que maneje bases de datos, la información correspondiente a las obligaciones contraídas o que llegue a contraer, fruto de operaciones financieras o comerciales celebradas con el Banco, sus filiales, subsidiarias y/o subordinadas.\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzGxAAJ\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Cuenta de ahorro referente a Negación en la apertura o solicitud del producto\"," +
+        "            \"requireMovements\": false," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Negación en la apertura o solicitud del producto\"" +
+        "                }," +
+        "                \"specificSubject\": \"Negación del producto\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"12\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3MAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a BBVA Móvil con relación a la Transacciones no reconocidas\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"BBVA Móvil\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas Móvil\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000Brs3PAAR\"," +
+        "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas Atm's\"," +
+        "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzHlAAJ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Datáfono\"" +
+        "                }," +
+        "                \"specificSubject\": \"Inconformidad Compra en Datáfono - Toma de datos\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzQxAAJ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Debitó y no entregó BBVA - Toma de datos\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"15\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzR7AAJ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Debitó y no entregó otras redes - Toma de datos\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"13\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzRMAAZ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Datáfono\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacción cargada doblemente - Toma de datos Datáfono\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"13\"" +
+        "                }" +
+        "            }" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzRWAAZ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Cajero automático\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - Toma de datos Cajero automático\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"10\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzRbAAJ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"Internet\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - Toma de datos Internet\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"14\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }," +
+        "        {" +
+        "            \"id\": \"a0h3p00000BrzRgAAJ\"," +
+        "            \"description\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "            \"requireMovements\": true," +
+        "            \"issue\": {" +
+        "                \"issueType\": {" +
+        "                    \"id\": \"BBVA Móvil\"" +
+        "                }," +
+        "                \"specificSubject\": \"Transacciones no reconocidas - Toma de datos BBVA Movil\"," +
+        "                \"tooltip\": \"Tipología utilizada exclusivamente los agentes del call center.\"," +
+        "                \"ranking\": {" +
+        "                    \"value\": \"12\"" +
+        "                }" +
+        "            }," +
+        "            \"forms\": [" +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"1. Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
+        "3. Formato Radicación PQR Suplantación Productos Online\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWmIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"2. -¿ Contrató usted el producto objeto de la transacción no reconocida ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWrIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"3. ¿Es usuario habitual de bancas digitales (BBVA Net)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCiUIAU\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"4. ¿Es usuario habitual de bancas digitales (BBVA Móvil)?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xDdvIAE\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"5. ¿En algún momento usted presentó alguna falla o novedad en su línea celular?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFWIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"6. ¿En el momento en que se produjo el evento, usted estaba intentando realizar alguna operación o consulta ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFoIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"7. ¿Alguna persona de su entorno tuvo acceso a su celular, claves o tarjetas?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFpIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"8. ¿Fue víctima de sustancias psicoactivas? \\r\\n" + //
+        "Si marco SI: No olvide adjuntar el examen toxicologico\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFqIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"9. ¿Fue víctima de hurto de su celular ?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFUIA2\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"10. ¿Extravió o le robaron su billetera - documentos y/o tarjetas - o fue víctima de cambiazo de tarjeta debito o crédito?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFjIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"11. ¿Fue forzado a realizar la operación fraudulenta usando la violencia?\\r\\n" + //
+        "Si marco SI: No olvide adjuntar denuncia ante fiscalia\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFVIA2\"," +
+        "                    \"formType\": \"03\"," +
+        "                    \"question\": \"12. Recibió usted una llamada telefonica, mail o SMS donde le solicitaban informacion de sus productos, clave de canales digitales y/o códigos?\\r\\n" + //
+        "( Si marco SI - indique el canal de contacto entre: SMS - llamada telefonica- email )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFeIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"13. El producto afectado fue Tarjetas? \\r\\n" + //
+        "Si marco SI: indique el canal entre: a. Operaciones en Comercios b.Retiro en ATMS\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFZIA2\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"14. El producto afectado fue Cuentas ? \\r\\n" + //
+        "(Si marco SI: indique el o los canales entre:\\r\\n" + //
+        "-Transferencia interbancaria -Traspaso cuentas propias o de otros clientes BBVA -PSE -Retiros mi billetera ( sin tarjetas) Avances - Trasnfiya \\r\\n" + //
+        "- Otros pagos )\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFaIAM\"," +
+        "                    \"formType\": \"02\"," +
+        "                    \"question\": \"15. El producto afectado fue Préstamos?\"" +
+        "                }," +
+        "                {" +
+        "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCFyIAM\"," +
+        "                    \"formType\": \"01\"," +
+        "                    \"question\": \"16. Realice una breve descripción del caso\\r\\n" + //
+        "(Incluyendo datos de valor como Fecha y Hora de los sucesos y si se comunico con el BBVA por call center u oficina a notificar lo sucedido)\"" +
+        "                }" +
+        "            ]" +
+        "        }" +
+        "    ]" +
+        "}";
+        JSONObject jsonObject = new JSONObject(parteA + parteB);
         return jsonObject;
     }
 

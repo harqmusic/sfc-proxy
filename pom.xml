@@ -42,6 +42,21 @@
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20231013</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -56,6 +71,30 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.sun.xml.ws</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<packageName>sfc.proxy.apisfc.soapconfig.libreriamc.wsdl</packageName>
+					<wsdlUrls>
+						<wsdlUrl>https://mc81mr-g35mzkl1yghmqj7vb7d74.soap.marketingcloudapis.com/etframework.wsdl</wsdlUrl>
+					</wsdlUrls>
+					<sourceDestDir>${project.basedir}/src/main/java/sfc/proxy/apisfc/soapconfig</sourceDestDir>
+					<destDir>${project.basedir}/src/main/resources/wsdl</destDir>
+					<extension>true</extension>
+					<vmArgs>
+						<vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+					</vmArgs>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -880,7 +880,7 @@ public class PqrCellsService {
                 "            }," + //
                 "            \"forms\": [" + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA1\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 1," + //
                 "                    \"question\": \"¿Recibió usted un correo electrónico o mensaje de texto a través del cual le indicaron que sus productos con el Banco estaban bloqueados y diligenció la información requerida en el mismo (agradecemos reenviar dicho correo al buzón de fraude internet@bbva.com)?\"," + //
@@ -919,7 +919,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA2\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 2," + //
                 "                    \"question\": \"¿Durante la realización de las transacciones objetadas, tuvo inconvenientes en el servicio de su línea celular?\"," + //
@@ -953,7 +953,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA3\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 3," + //
                 "                    \"question\": \"¿Tiene personas de su confianza con acceso a la tarjeta debito y/o crédito?\"," + //
@@ -997,7 +997,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA4\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 4," + //
                 "                    \"question\": \"¿Alguien más conoce su clave de operaciones en los canales de internet, móvil, cajeros, y/o Call center?\"," + //
@@ -1026,7 +1026,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA5\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 5," + //
                 "                    \"question\": \"Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
@@ -1054,14 +1054,14 @@ public class PqrCellsService {
                 "            ]" + //
                 "        }," + //
                 "        {" + //
-                "            \"id\": \"a0h3p00000Brs3UAAR\"," + //
+                "            \"id\": \"a0h3p00000Brs3UAAX\"," + //
                 "            \"description\": \"Son peticiones realizadas por el Cliente en su producto Tarjeta de Crédito referente a Cajero automático con relación a la Transacciones no reconocidas - Posible clonación\"," + //
                 "            \"requireMovements\": true," + //
                 "            \"issue\": {" + //
                 "                \"issueType\": {" + //
                 "                    \"id\": \"Cajero automático\"" + //
                 "                }," + //
-                "                \"specificSubject\": \"Transacciones no reconocidas - Posible clonación Atm's\"," + //
+                "                \"specificSubject\": \"Transacciones no reconocidas 2 - Posible clonación sesiones GLOMO\"," + //
                 "                \"tooltip\": \"El presente trámite exige el bloqueo de la tarjeta asociada y el radicador es responsable de realizar esta operación interna, so pena de devolución y/o penalización.   El funcionario será responsable de informarle al cliente que una vez recibida la notificación con número de radicado, deberá comunicarse al Call Center para solicitar el desbloqueo  de los canales.\"," + //
                 "                \"ranking\": {" + //
                 "                    \"value\": \"14\"" + //
@@ -1069,7 +1069,7 @@ public class PqrCellsService {
                 "            }," + //
                 "            \"forms\": [" + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAX-a0dDm000000xCWwIA6\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 1," + //
                 "                    \"question\": \"¿Recibió usted un correo electrónico o mensaje de texto a través del cual le indicaron que sus productos con el Banco estaban bloqueados y diligenció la información requerida en el mismo (agradecemos reenviar dicho correo al buzón de fraude internet@bbva.com)?\"," + //
@@ -1108,7 +1108,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAX-a0dDm000000xCWwIA7\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 2," + //
                 "                    \"question\": \"¿Durante la realización de las transacciones objetadas, tuvo inconvenientes en el servicio de su línea celular?\"," + //
@@ -1142,7 +1142,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAX-a0dDm000000xCWwIA8\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 3," + //
                 "                    \"question\": \"¿Tiene personas de su confianza con acceso a la tarjeta debito y/o crédito?\"," + //
@@ -1186,7 +1186,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAX-a0dDm000000xCWwIA9\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 4," + //
                 "                    \"question\": \"¿Alguien más conoce su clave de operaciones en los canales de internet, móvil, cajeros, y/o Call center?\"," + //
@@ -1215,7 +1215,7 @@ public class PqrCellsService {
                 "                    ]                    " + //
                 "                }," + //
                 "                {" + //
-                "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIAM\"," + //
+                "                    \"id\": \"a0eDm000000ij2xIAX-a0dDm000000xCWwI10\"," + //
                 "                    \"formType\": \"02\"," + //
                 "                    \"order\": 5," + //
                 "                    \"question\": \"Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //

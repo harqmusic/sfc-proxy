@@ -921,7 +921,7 @@ public class PqrCellsService {
                 "                {" + //
                 "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA2\"," + //
                 "                    \"formType\": \"02\"," + //
-                "                    \"order\": 2," + //
+                "                    \"order\": 4," + //
                 "                    \"question\": \"¿Durante la realización de las transacciones objetadas, tuvo inconvenientes en el servicio de su línea celular?\"," + //
                 "                    \"openQuestion\": {" + //
                 "                        \"enabled\": true," + //
@@ -999,7 +999,7 @@ public class PqrCellsService {
                 "                {" + //
                 "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA4\"," + //
                 "                    \"formType\": \"02\"," + //
-                "                    \"order\": 4," + //
+                "                    \"order\": 5," + //
                 "                    \"question\": \"¿Alguien más conoce su clave de operaciones en los canales de internet, móvil, cajeros, y/o Call center?\"," + //
                 "                    \"openQuestion\": {" + //
                 "                        \"enabled\": true," + //
@@ -1028,7 +1028,7 @@ public class PqrCellsService {
                 "                {" + //
                 "                    \"id\": \"a0eDm000000ij2xIAA-a0dDm000000xCWwIA5\"," + //
                 "                    \"formType\": \"02\"," + //
-                "                    \"order\": 5," + //
+                "                    \"order\": 2," + //
                 "                    \"question\": \"Tiene usted productos contratados actualmente con el banco? Si marco No: No olvide adjuntar el 1. Copia del documento de identificación  2. Reclamo con descripción de los hechos, firma y huella\\r\\n" + //
                 "3. Formato Radicación PQR Suplantación Productos Online\"," + //
                 "                    \"openQuestion\": {" + //

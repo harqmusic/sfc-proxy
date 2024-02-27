@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -55,10 +56,19 @@ public class PqrCells {
 
     ///https://cellsaso.live.co.nextgen.igrupobbva/salesforce-issue-tracker/v0/issues?targetUserId=01-91251449
     @CrossOrigin(origins = "*")
-    @PostMapping(value = "salesforce-issue-tracker/v0/issues", produces="application/json")
+    @GetMapping(value = "salesforce-issue-tracker/v0/issues", produces="application/json")
     public @ResponseBody String getIssuesAso(@RequestParam("targetUserId") String targetUserId) {
 
         JSONObject jsonObject = PqrCellsService.getIssuesAso();
+        return jsonObject.toString();
+    }
+
+    ///https://cellsaso.live.co.nextgen.igrupobbva/salesforce-issue-tracker/v0/issues
+    @CrossOrigin(origins = "*")
+    @PostMapping(value = "salesforce-issue-tracker/v0/issues", produces="application/json")
+    public @ResponseBody String postNewCaseAso(@RequestBody Object newCase) {
+
+        JSONObject jsonObject = PqrCellsService.postNewCaseAso();
         return jsonObject.toString();
     }
 

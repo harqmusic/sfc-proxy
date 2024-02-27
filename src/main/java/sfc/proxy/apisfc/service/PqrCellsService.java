@@ -195,7 +195,263 @@ public class PqrCellsService {
         return jsonObject;
     }
 
+    //Post salesforce-issue-tracker/v0/issues
+    public static JSONObject postNewCaseAso() {
 
+        JSONObject jsonObject = new JSONObject(
+                "{" +
+                                        "  \"data\": {" +
+                                        "    \"id\": \"5003E00000DBm5ZQAT\"," +
+                                        "    \"subject\": \"86848-ROYAL BANK OF SCOTLAND PLC\"," +
+                                        "    \"resolution\": \"Introducir la información de la cuenta correctamente\"," +
+                                        "    \"appUserId\": \"ADMIN01\"," +
+                                        "    \"financialManagementCompanyId\": \"20072230\"," +
+                                        "    \"description\": \"Incidencia a la hora de crear una transferencia.\"," +
+                                        "    \"sourceSystem\": \"Net Cash\"," +
+                                        "    \"sourceSystemCode\":\"1234\"," +
+                                        "    \"internalIssueId\": \"00015837\"," +
+                                        "    \"creationDate\": \"2018-05-03\"," +
+                                        "    \"closeDate\": \"2016-01-29T12:03:26Z\"," +
+                                        "    \"caseCreator\": \"Creador del caso\"," +
+                                        "    \"targetedCompletionDate\":\"2016-01-29T12:03:26Z\"," +
+                                        "    \"origin\": \"WEB_FORM\"," +
+                                        "    \"priority\": \"MEDIUM\"," +
+                                        "    \"milestone\":\"remove\"," +
+                                        "    \"classification\": \"INCIDENCE\"," +
+                                        "    \"status\": \"ANSWERED\"," +
+                                        "    \"action\":\"NEW\"," +
+                                        "    \"notes\":{" +
+                                        "      \"id\":[\"12332\",\"1322\"]" +
+                                        "    }," +
+                                        "    \"location\":{" +
+                                        "      \"addressComponents\":[" +
+                                        "        {" +
+                                        "          \"componentTypes\":[\"calle\",\"15\"]," +
+                                        "          \"code\":\"110921\"," +
+                                        "          \"name\":\"calle Robles\"," +
+                                        "          \"additionalInformation\":\"frente a iglesia\"" +
+                                        "        }," +
+                                        "        {" +
+                                        "          \"componentTypes\":[\"calle\",\"15\"]," +
+                                        "          \"code\":\"110921\"," +
+                                        "          \"name\":\"calle Robles\"," +
+                                        "          \"additionalInformation\":\"frente a iglesia\"" +
+                                        "        }" +
+                                        "      ]" +
+                                        "    }," +
+                                        "    \"client\": {" +
+                                        "      \"id\": \"987652587\"," +
+                                        "      \"fullName\": \"Nombre cliente Max Mistral\"" +
+                                        "    }," +
+                                        "    \"form\":{" +
+                                        "      \"id\":\"5003E00000DBm5ZQAT\"," +
+                                        "      \"name\":\"Reporte tarjeta\"," +
+                                        "      \"formAnswers\":[" +
+                                        "        {" +
+                                        "          \"id\":\"5003E00000DBm5ZQAT\"," +
+                                        "          \"questionId\":\"1\"," +
+                                        "          \"questionType\":{" +
+                                        "            \"id\":\"2\"," +
+                                        "            \"description\":\"pregunta de incidencia\"" +
+                                        "          }," +
+                                        "          \"answer\":\"respuesta cliente\"," +
+                                        "          \"isRequired\":\"String\"," +
+                                        "          \"optionListAnswer\":[\"a\",\"b\",\"c\"]," +
+                                        "          \"order\":2," +
+                                        "          \"openQuestion\":{" +
+                                        "            \"enabled\":true," +
+                                        "            \"required\":false" +
+                                        "          }," +
+                                        "          \"closeQuestion\":{" +
+                                        "            \"enabled\":false," +
+                                        "            \"required\":true," +
+                                        "            \"explainYes\":true," +
+                                        "            \"explainNo\":false" +
+                                        "          }," +
+                                        "          \"optionListQuestion\":{" +
+                                        "            \"enabled\":false," +
+                                        "            \"required\":true," +
+                                        "            \"isMultipleAnswer\":true," +
+                                        "            \"options\":[\"A\",\"b\",\"c\"]" +
+                                        "          }" +
+                                        "        }," +
+                                        "        {" +
+                                        "          \"id\":\"5003E00000DBm5ZQAT\"," +
+                                        "          \"questionId\":\"1\"," +
+                                        "          \"questionType\":{" +
+                                        "            \"id\":\"2\"," +
+                                        "            \"description\":\"pregunta de incidencia\"" +
+                                        "          }," +
+                                        "          \"answer\":\"respuesta cliente\"," +
+                                        "          \"isRequired\":\"String\"," +
+                                        "          \"optionListAnswer\":[\"a\",\"b\",\"c\"]," +
+                                        "          \"order\":2," +
+                                        "          \"openQuestion\":{" +
+                                        "            \"enabled\":true," +
+                                        "            \"required\":false" +
+                                        "          }," +
+                                        "          \"closeQuestion\":{" +
+                                        "            \"enabled\":false," +
+                                        "            \"required\":true," +
+                                        "            \"explainYes\":true," +
+                                        "            \"explainNo\":false" +
+                                        "          }," +
+                                        "          \"optionListQuestion\":{" +
+                                        "            \"enabled\":false," +
+                                        "            \"required\":true," +
+                                        "            \"isMultipleAnswer\":true," +
+                                        "            \"options\":[\"A\",\"b\",\"c\"]" +
+                                        "          }" +
+                                        "        }" +
+                                        "      ]" +
+                                        "    }," +
+                                        "    \"area\":{" +
+                                        "      \"id\":\"2323\"," +
+                                        "      \"subarea\":{" +
+                                        "        \"id\":\"6329\"" +
+                                        "      }" +
+                                        "    }," +
+                                        "    \"attachments\":[" +
+                                        "      {" +
+                                        "        \"name\":\"objeto\"," +
+                                        "        \"size\":\"600mbp\"," +
+                                        "        \"createdDate\":\"2016-01-29T12:03:26Z\"," +
+                                        "        \"link\":{" +
+                                        "          \"rel\":\"depende\"," +
+                                        "          \"href\":\"www.casosPqr.com\"" +
+                                        "        }" +
+                                        "      }," +
+                                        "      {" +
+                                        "        \"name\":\"objeto\"," +
+                                        "        \"size\":\"600mbp\"," +
+                                        "        \"createdDate\":\"2016-01-29T12:03:26Z\"," +
+                                        "        \"link\":{" +
+                                        "          \"rel\":\"depende\"," +
+                                        "          \"href\":\"www.casosPqr.com\"" +
+                                        "        }" +
+                                        "      }" +
+                                        "    ]," +
+                                        "    \"issuer\": {" +
+                                        "      \"fullName\": \"John Doe García\"," +
+                                        "      \"contactDetails\": [" +
+                                        "        {" +
+                                        "          \"contact\": \"637824316\"," +
+                                        "          \"contactType\": \"PHONE_NUMBER\"," +
+                                        "          \"isPreferential\": true" +
+                                        "        }," +
+                                        "        {" +
+                                        "          \"contact\": \"JohnDoe@organization.com\"," +
+                                        "          \"contactType\": \"WORK_EMAIL\"," +
+                                        "          \"isPreferential\": false" +
+                                        "        }" +
+                                        "      ]," +
+                                        "      \"location\":{" +
+                                        "        \"formattedAddress\":\"colombianizada\"," +
+                                        "        \"addressComponents\":[" +
+                                        "          {" +
+                                        "            \"componentTypes\":[\"calle\",\"15\"]," +
+                                        "            \"code\":\"110921\"," +
+                                        "            \"name\":\"calle Robles\"," +
+                                        "            \"additionalInformation\":\"frente a iglesia\" " +
+                                        "          }," +
+                                        "          {" +
+                                        "            \"componentTypes\":[\"calle\",\"15\"]," +
+                                        "            \"code\":\"110921\"," +
+                                        "            \"name\":\"calle Robles\"," +
+                                        "            \"additionalInformation\":\"frente a iglesia\"" +
+                                        "          }" +
+                                        "        ]" +
+                                        "      }," +
+                                        "      \"gender\":{" +
+                                        "        \"id\":\"2\"," +
+                                        "        \"description\":\"no binario\"" +
+                                        "      }," +
+                                        "      \"lgbtiqCommunity\":\"Queer\"," +
+                                        "      \"specialCondition\":{" +
+                                        "        \"id\":\"2\"," +
+                                        "        \"description\":\"TDHA\"" +
+                                        "      }" +
+                                        "    }," +
+                                        "    \"contract\": {" +
+                                        "      \"id\": \"1234\"," +
+                                        "      \"number\": \"1234\"," +
+                                        "      \"numberType\": {" +
+                                        "        \"id\": \"1234\"" +
+                                        "      }," +
+                                        "      \"product\": {" +
+                                        "        \"id\": \"9876\"," +
+                                        "        \"name\": \"Tarjeta de credito\"," +
+                                        "        \"productType\": {" +
+                                        "          \"id\": \"VISA\"" +
+                                        "        }" +
+                                        "      }," +
+                                        "      \"transaction\": [" +
+                                        "        {" +
+                                        "          \"id\": 1," +
+                                        "          \"operationDate\": \"2019-12-12T20:33:52.0+0000\"," +
+                                        "          \"localAmount\": {" +
+                                        "            \"amount\": \"100000\"," +
+                                        "            \"currency\": \"COP\"" +
+                                        "          }," +
+                                        "          \"channel\": {" +
+                                        "            \"id\": \"ATM\"," +
+                                        "            \"name\": \"ATM 345\"" +
+                                        "          }," +
+                                        "          \"transactionNumber\": \"561\"," +
+                                        "        }," +
+                                        "        {" +
+                                        "          \"id\": 1," +
+                                        "          \"operationDate\": \"2019-12-12T20:33:52.0+0000\"," +
+                                        "          \"localAmount\": {" +
+                                        "            \"amount\": \"100000\"," +
+                                        "            \"currency\": \"COP\"" +
+                                        "          }," +
+                                        "          \"channel\": {" +
+                                        "            \"id\": \"ATM\"," +
+                                        "            \"name\": \"ATM 345\"" +
+                                        "          }," +
+                                        "          \"transactionNumber\": \"561\"" +
+                                        "        }" +
+                                        "      ]" +
+                                        "    }," +
+                                        "    \"ocurrenceDate\": \"2020-02-06\"," +
+                                        "    \"parentIssue\": {" +
+                                        "      \"id\": \"00043\"," +
+                                        "      \"internalIssueId\": \"500g000000UN5eFAAT\"" +
+                                        "    }," +
+                                        "    \"replyTopic\": \"03\"," +
+                                        "    \"claimant\": {" +
+                                        "      " +
+                                        "      \"NONCUSTOMER\":{" +
+                                        "        \"claimantType\":\"NONCUSTOMER\"," +
+                                        "        \"identityDocuments\": [" +
+                                        "        {" +
+                                        "          \"documentType\": {" +
+                                        "            \"id\": \"02\"" +
+                                        "          }," +
+                                        "          \"documentNumber\": \"3545444422\"" +
+                                        "        }," +
+                                        "        {" +
+                                        "          \"documentType\": {" +
+                                        "            \"id\": \"02\"" +
+                                        "          }," +
+                                        "          \"documentNumber\": \"3545444422\"" +
+                                        "        }" +
+                                        "      ]," +
+                                        "      \"occupationType\": {" +
+                                        "        \"id\": \"02\"" +
+                                        "      }    " +
+                                        "    }," +
+                                        "    \"ASCUSTOMER\":{" +
+                                        "      \"claimantType\":\"CUSTOMER\"," +
+                                        "      \"id\":\"00043\"" +
+                                        "      }" +
+                                        "    }" +
+                                        "  }" +
+                                        "}"
+        );
+        return jsonObject;
+    }
 
     ///customers/v1/customers/1000001032422977/classification
 

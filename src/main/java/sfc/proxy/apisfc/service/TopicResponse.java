@@ -25,6 +25,7 @@ public class TopicResponse {
                         "                {" +
                         "                    \"id\": \"a0Yg0000006PKKFEA4-a0Xg0000005yNBSEA2\"," +
                         "                    \"question\": \"1. ¿Recibió usted un correo electrónico o mensaje de texto a través del cual le indicaron que sus productos con el Banco estaban bloqueados y diligenció la información requerida en el mismo (agradecemos reenviar dicho correo al buzón de fraude internet@bbva.com)?\"," +
+                        "                    \"formType\": \"02\"," +
                         "                    \"order\": 1," +
                         "                    \"openQuestion\": {" +
                         "                        \"enabled\": true," +

@@ -22,6 +22,42 @@ public class TopicResponse {
                         "                }" +
                         "            }," +
                         "            \"forms\": [" +
+                        "                {" +
+                        "                    \"id\": \"a0Yg0000006PKKFEA4-a0Xg0000005yNBSEA2\"," +
+                        "                    \"question\": \"1. ¿Recibió usted un correo electrónico o mensaje de texto a través del cual le indicaron que sus productos con el Banco estaban bloqueados y diligenció la información requerida en el mismo (agradecemos reenviar dicho correo al buzón de fraude internet@bbva.com)?\"," +
+                        "                    \"order\": 1," +
+                        "                    \"openQuestion\": {" +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": true" +
+                        "                    }," +
+                        "                    \"closeQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false," +
+                        "                        \"explainYes\": false," +
+                        "                        \"explainNo\": false" +
+                        "                    }," +
+                        "                    \"optionListQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false," +
+                        "                        \"isMultipleAnswer\": false," + //
+                        "                        \"options\": [" +
+                        "                            \"Option1\"," +
+                        "                            \"Option2\"" +
+                        "                        ]" +
+                        "                    }," +
+                        "                    \"skipQuestionRules\": [" +
+                        "                        {" +
+                        "                            \"nextQuestionOrder\": 2," +
+                        "                            \"closedAnswer\": \"No\"," +
+                        "                            \"selectedOption\": \"Option1\"" +
+                        "                        }," +
+                        "                        {" +
+                        "                            \"nextQuestionOrder\": 3," +
+                        "                            \"closedAnswer\": \"Si\"," +
+                        "                            \"selectedOption\": \"Option2\"" +
+                        "                        }" +
+                        "                    ]" +
+                        "                }," +
                         "            ]" +
                         "        }" +
                         "    ]" +

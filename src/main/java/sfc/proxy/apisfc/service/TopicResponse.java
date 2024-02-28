@@ -213,6 +213,7 @@ public class TopicResponse {
                         "                    \"optionListQuestions\": {" +
                         "                        \"enabled\": false," +
                         "                        \"required\": false," +
+                        "                        \"isMultipleAnswer\": false," + //
                         "                        \"options\": [" +
                         "                            \"Option1\"," +
                         "                            \"Option2\"" +
@@ -248,6 +249,7 @@ public class TopicResponse {
                         "                    \"optionListQuestions\": {" +
                         "                        \"enabled\": false," +
                         "                        \"required\": false," +
+                        "                        \"isMultipleAnswer\": false," + //
                         "                        \"options\": []" +
                         "                    }," +
                         "                    \"skipQuestionRules\": []" +
@@ -269,6 +271,7 @@ public class TopicResponse {
                         "                    \"optionListQuestions\": {" +
                         "                        \"enabled\": true," +
                         "                        \"required\": false," +
+                        "                        \"isMultipleAnswer\": false," + //
                         "                        \"options\": [" +
                         "                            \"Opción 1\"," +
                         "                            \"Opción 2\"," +
@@ -295,6 +298,7 @@ public class TopicResponse {
                         "                    \"optionListQuestions\": {" +
                         "                        \"enabled\": true," +
                         "                        \"required\": true," +
+                        "                        \"isMultipleAnswer\": false," + //
                         "                        \"options\": [" +
                         "                            \"Optio 1x\"," +
                         "                            \"Optio 2x\"," +

@@ -105,8 +105,8 @@ public class PqrCells {
     @GetMapping(value = "salesforce-issue-tracker/v0/topics", produces="application/json")
     public @ResponseBody String getTopicsAso(@RequestParam("product.Id") String productId, @RequestParam("subProduct.Id") String supProductIdtargetUserIdd) {
 
-        //JSONObject jsonObject = PqrCellsService.getTopicsAso();
-        JSONObject jsonObject = TopicResponse.getTopicsAso();
+        JSONObject jsonObject = PqrCellsService.getTopicsAso();
+        //JSONObject jsonObject = TopicResponse.getTopicsAso();
 
         return jsonObject.toString();
     }

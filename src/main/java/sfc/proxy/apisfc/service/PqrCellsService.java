@@ -262,7 +262,7 @@ public class PqrCellsService {
                                         "            \"enabled\":true," +
                                         "            \"required\":false" +
                                         "          }," +
-                                        "          \"closeQuestion\":{" +
+                                        "          \"closedQuestion\":{" +
                                         "            \"enabled\":false," +
                                         "            \"required\":true," +
                                         "            \"explainYes\":true," +
@@ -290,7 +290,7 @@ public class PqrCellsService {
                                         "            \"enabled\":true," +
                                         "            \"required\":false" +
                                         "          }," +
-                                        "          \"closeQuestion\":{" +
+                                        "          \"closedQuestion\":{" +
                                         "            \"enabled\":false," +
                                         "            \"required\":true," +
                                         "            \"explainYes\":true," +
@@ -1144,7 +1144,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": true," + //
@@ -1183,7 +1183,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": false," + //
@@ -1217,7 +1217,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": true" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": false," + //
@@ -1261,7 +1261,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": false," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": false," + //
@@ -1291,7 +1291,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": true," + //
                 "                        \"explainYes\": true," + //
@@ -1333,7 +1333,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": true," + //
@@ -1372,7 +1372,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": false," + //
@@ -1406,7 +1406,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": true" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": false," + //
@@ -1450,7 +1450,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": false," + //
                 "                        \"required\": false," + //
                 "                        \"explainYes\": false," + //
@@ -1480,7 +1480,7 @@ public class PqrCellsService {
                 "                        \"enabled\": true," + //
                 "                        \"required\": false" + //
                 "                    }," + //
-                "                    \"closeQuestion\": {" + //
+                "                    \"closedQuestion\": {" + //
                 "                        \"enabled\": true," + //
                 "                        \"required\": true," + //
                 "                        \"explainYes\": true," + //

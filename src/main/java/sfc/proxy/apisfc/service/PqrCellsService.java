@@ -1353,11 +1353,11 @@ public class PqrCellsService {
                 "                    \"skipQuestionRules\": [" + //
                 "                        {" + //
                 "                            \"nextQuestionOrder\": 4," + //
-                "                            \"closedAnswer\": \"Si\"," + //
+                "                            \"closedAnswer\": \"\"," + //
                 "                            \"selectedOption\": \"option 3\"" + //
                 "                        }," + //
                 "                        {" + //
-                "                            \"nextQuestionOrder\": 5," + //
+                "                            \"nextQuestionOrder\": \"\"," + //
                 "                            \"closedAnswer\": \"Si\"," + //
                 "                            \"selectedOption\": \"option N\"" + //
                 "                        }" + //

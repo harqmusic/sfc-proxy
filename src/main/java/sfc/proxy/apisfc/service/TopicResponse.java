@@ -23,48 +23,149 @@ public class TopicResponse {
                         "            }," +
                         "            \"forms\": [" +
                         "                {" +
-                        "                    \"id\": \"a0Yg0000006PKKFEA4-a0Xg0000005yNBSEA2\"," +
-                        "                    \"question\": \"1. ¿Recibió usted un correo electrónico o mensaje de texto a través del cual le indicaron que sus productos con el Banco estaban bloqueados y diligenció la información requerida en el mismo (agradecemos reenviar dicho correo al buzón de fraude internet@bbva.com)?\"," +
-                        "                    \"order\": 1," +
-                        "                    \"openQuestions\": {" +
-                        "                        \"enabled\": true," +
-                        "                        \"required\": true" +
+                        "                    \"id\": \"a0Yg0000006PKKFEA4-a0XDz000006C1Q5MAK\"," +
+                        "                    \"question\": \"Has tenido problemas con la Net\"," +
+                        "                    \"order\": 6," +
+                        "                    \"openQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false" +
                         "                    }," +
-                        "                    \"closedQuestions\": {" +
+                        "                    \"closedQuestion\": {" +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": false," +
+                        "                        \"explainYes\": true," +
+                        "                        \"explainNo\": false" +
+                        "                    }," +
+                        "                    \"optionListQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false," +
+                        "                        \"isMultipleAnswer\": false," +
+                        "                        \"options\": []" +
+                        "                    }," +
+                        "                    \"skipQuestionRules\": []" +
+                        "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0Yg0000006PKKFEA4-a0XDz000006C1PvMAK\"," +
+                        "                    \"question\": \"Tiene ud más productos con el banco?. En caso afirmativo diga cuales\"," +
+                        "                    \"order\": 2," +
+                        "                    \"openQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false" +
+                        "                    }," +
+                        "                    \"closedQuestion\": {" +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": false," +
+                        "                        \"explainYes\": true," +
+                        "                        \"explainNo\": false" +
+                        "                    }," +
+                        "                    \"optionListQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false," +
+                        "                        \"isMultipleAnswer\": false," +
+                        "                        \"options\": []" +
+                        "                    }," +
+                        "                    \"skipQuestionRules\": [" +
+                        "                        {" +
+                        "                            \"nextQuestionOrder\": 5," +
+                        "                            \"closedAnswer\": \"No\"," +
+                        "                            \"selectedOption\": \"\"" +
+                        "                        }" +
+                        "                    ]" +
+                        "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0Yg0000006PKKFEA4-a0XDz000006C1PwMAK\"," +
+                        "                    \"question\": \"seleccione qué canales usa del banco. Indícanos qué te gusta de ellos\"," +
+                        "                    \"order\": 1," +
+                        "                    \"openQuestion\": {" +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": false" +
+                        "                    }," +
+                        "                    \"closedQuestion\": {" +
                         "                        \"enabled\": false," +
                         "                        \"required\": false," +
                         "                        \"explainYes\": false," +
                         "                        \"explainNo\": false" +
                         "                    }," +
-                        "                    \"optionListQuestions\": {" +
-                        "                        \"enabled\": false," +
+                        "                    \"optionListQuestion\": {" +
+                        "                        \"enabled\": true," +
                         "                        \"required\": false," +
-                        "                        \"isMultipleAnswer\": false," + //
+                        "                        \"isMultipleAnswer\": true," +
                         "                        \"options\": [" +
-                        "                            \"Option1\"," +
-                        "                            \"Option2\"" +
+                        "                            \"ATM\"," +
+                        "                            \"GLOMO\"," +
+                        "                            \"NET\"," +
+                        "                            \"NETCASH\"," +
+                        "                            \"OTROS\"" +
                         "                        ]" +
                         "                    }," +
                         "                    \"skipQuestionRules\": [" +
                         "                        {" +
-                        "                            \"nextQuestionOrder\": 2," +
-                        "                            \"closedAnswer\": \"No\"," +
-                        "                            \"selectedOption\": \"Option1\"" +
+                        "                            \"nextQuestionOrder\": 5," +
+                        "                            \"closedAnswer\": \"\"," +
+                        "                            \"selectedOption\": \"GLOMO\"" +
                         "                        }," +
                         "                        {" +
-                        "                            \"nextQuestionOrder\": 3," +
-                        "                            \"closedAnswer\": \"Si\"," +
-                        "                            \"selectedOption\": \"Option2\"" +
+                        "                            \"nextQuestionOrder\": 6," +
+                        "                            \"closedAnswer\": \"\"," +
+                        "                            \"selectedOption\": \"NET\"" +
                         "                        }" +
                         "                    ]" +
                         "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0Yg0000006PKKFEA4-a0XDz000006C1QAMA0\"," +
+                        "                    \"question\": \"Cual producto le gusta mas. Alguna sugerencia de mejora\"," +
+                        "                    \"order\": 3," +
+                        "                    \"openQuestion\": {" +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": false" +
+                        "                    }," +
+                        "                    \"closedQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false," +
+                        "                        \"explainYes\": false," +
+                        "                        \"explainNo\": false" +
+                        "                    }," +
+                        "                    \"optionListQuestion\": {" +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": true," +
+                        "                        \"isMultipleAnswer\": false," +
+                        "                        \"options\": [" +
+                        "                            \"CDT\"," +
+                        "                            \"LIBRANZA\"," +
+                        "                            \"CUANTA DE AHORROS\"," +
+                        "                            \"PRESTAMOS\"," +
+                        "                            \"HIPOTECARIOS\"," +
+                        "                            \"OTROS\"" +
+                        "                        ]" +
+                        "                    }," +
+                        "                    \"skipQuestionRules\": []" +
+                        "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0Yg0000006PKKFEA4-a0XDz000006C1Q0MAK\"," +
+                        "                    \"question\": \"qué te gusta de Glomo\"," +
+                        "                    \"order\": 5," +
+                        "                    \"openQuestion\": {" +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": true" +
+                        "                    }," +
+                        "                    \"closedQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false," +
+                        "                        \"explainYes\": false," +
+                        "                        \"explainNo\": false" +
+                        "                    }," +
+                        "                    \"optionListQuestion\": {" +
+                        "                        \"enabled\": false," +
+                        "                        \"required\": false," +
+                        "                        \"isMultipleAnswer\": false," +
+                        "                        \"options\": []" +
+                        "                    }," +
+                        "                    \"skipQuestionRules\": []" +
+                        "                }" +
                         "            ]" +
                         "        }" +
                         "    ]" +
-                        "}" +
-                        "" +
-                        "" +
-                        "";
+                        "}";
         JSONObject jsonObject = new JSONObject(parteA);
         return jsonObject;
     }

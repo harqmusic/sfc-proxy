@@ -81,8 +81,8 @@ public class TopicResponse {
                         "                        \"required\": false" +
                         "                    }," +
                         "                    \"closedQuestion\": {" +
-                        "                        \"enabled\": false," +
-                        "                        \"required\": false," +
+                        "                        \"enabled\": true," +
+                        "                        \"required\": true," +
                         "                        \"explainYes\": false," +
                         "                        \"explainNo\": false" +
                         "                    }," +

@@ -56,13 +56,13 @@ public class PqrCells {
     }
 
     ///https://cellsaso.live.co.nextgen.igrupobbva/salesforce-issue-tracker/v0/issues?targetUserId=01-91251449
-    @CrossOrigin(origins = "*")
+    /*@CrossOrigin(origins = "*")
     @GetMapping(value = "salesforce-issue-tracker/v0/issues", produces="application/json")
     public @ResponseBody String getIssuesAso(@RequestParam("targetUserId") String targetUserId) {
 
         JSONObject jsonObject = PqrCellsService.getIssuesAso();
         return jsonObject.toString();
-    }
+    }*/
 
     ///https://cellsaso.live.co.nextgen.igrupobbva/salesforce-issue-tracker/v0/issues
     @CrossOrigin(origins = "*")

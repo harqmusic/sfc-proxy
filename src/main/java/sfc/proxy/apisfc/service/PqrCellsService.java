@@ -3445,7 +3445,156 @@ public class PqrCellsService {
 
     public static JSONObject getIssueAso() {
 
-        JSONObject jsonObject = new JSONObject("");
+        JSONObject jsonObject = new JSONObject("{" +
+                        "    \"data\": {" +
+                        "        \"id\": \"00007985\"," +
+                        "        \"subject\": \"Cobro servicios o comisiones\"," +
+                        "        \"status\": \"02\"," +
+                        "        \"issuer\": {" +
+                        "            \"fullName\": \"ADOLFO RUIZ VALLEJO\"," +
+                        "            \"contactDetails\": [" +
+                        "                {" +
+                        "                    \"contact\": \"AVE PUMAREJO # 345-340, BOGOTA, DISTRITO CAPITAL, COLOMBIA\"," +
+                        "                    \"contactType\": \"Address\"" +
+                        "                }" +
+                        "            ]," +
+                        "            \"location\": {" +
+                        "                \"formattedAddress\": \"AVE PUMAREJO # 345-340- BOGOTA, COLOMBIA\"" +
+                        "            }" +
+                        "        }," +
+                        "        \"description\": \"jhj\"," +
+                        "        \"sourceSystem\": \"a0b4D000000vSaZQAU\"," +
+                        "        \"origin\": \"01\"," +
+                        "        \"internalIssueId\": \"5007j00000Gw8rkAAB\"," +
+                        "        \"creationDate\": \"2024-03-06T17:46:20.000-0500\"," +
+                        "        \"classification\": \"01\"," +
+                        "        \"form\": {" +
+                        "            \"id\": \"a0W7j000002hPtkEAE\"," +
+                        "            \"formAnswers\": [" +
+                        "                {" +
+                        "                    \"id\": \"a0X7j000007fyqVEAQ\"," +
+                        "                    \"questionId\": \"a0Y7j000002LVO9EAO\"," +
+                        "                    \"question\": \"seleccione qué canales usa del banco. Indícanos qué te gusta de ellos\"," +
+                        "                    \"questionType\": {}," +
+                        "                    \"answer\": \"\"" +
+                        "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0X7j000007fyqaEAA\"," +
+                        "                    \"questionId\": \"a0Y7j000002LVO9EAO\"," +
+                        "                    \"question\": \"Tiene ud más productos con el banco?. En caso afirmativo diga cuales\"," +
+                        "                    \"questionType\": {}" +
+                        "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0X7j000007fyqfEAA\"," +
+                        "                    \"questionId\": \"a0Y7j000002LVO9EAO\"," +
+                        "                    \"question\": \"Cual producto le gusta mas. Alguna sugerencia de mejora\"," +
+                        "                    \"questionType\": {}," +
+                        "                    \"answer\": \"Algo\"" +
+                        "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0X7j000007fyqkEAA\"," +
+                        "                    \"questionId\": \"a0Y7j000002LVO9EAO\"," +
+                        "                    \"question\": \"qué te gusta de Glomo\"," +
+                        "                    \"questionType\": {}," +
+                        "                    \"answer\": \"Pregunta 5\"" +
+                        "                }," +
+                        "                {" +
+                        "                    \"id\": \"a0X7j000007fyqpEAA\"," +
+                        "                    \"questionId\": \"a0Y7j000002LVO9EAO\"," +
+                        "                    \"question\": \"Has tenido problemas con la Net\"," +
+                        "                    \"questionType\": {}," +
+                        "                    \"answer\": \"\"," +
+                        "                    \"isRequired\": \"No\"" +
+                        "                }" +
+                        "            ]" +
+                        "        }," +
+                        "        \"attachments\": [" +
+                        "            {" +
+                        "                \"name\": \"Solicitud del Cliente|@|descarga imp.jpg\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SM-00001\"," +
+                        "                    \"href\": \"e4ed2549-c738-483a-9d85-542eaf957341\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Solicitud del Cliente|@|Suplantacion_fraude_Hurto_BBVA.pdf\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SM-00001\"," +
+                        "                    \"href\": \"29c86edd-3932-4442-b4a8-7122bfd3c032\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Solicitud del Cliente|@|descarga imp.jpg\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SM-00001\"," +
+                        "                    \"href\": \"bf0af8dd-886f-48fd-a5ec-5a75d759872a\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Solicitud del Cliente|@|SOL_INFO-B11796323-JAIME_ANDRES_ROBAYO_TORRES.docx\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SM-00001\"," +
+                        "                    \"href\": \"167cfb39-06bb-4c82-8b85-c9d828777f84\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Respuesta al Cliente|@|pantalla con campos Fraude.jpg\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SF-00006\"," +
+                        "                    \"href\": \"631eb252-0517-40e1-a49e-dbbcf7395e54\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Solicitud del Cliente|@|Simulación CDT.pdf\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SM-00001\"," +
+                        "                    \"href\": \"ced903f3-1afc-4141-ba71-4d5073cfa1c4\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Respuesta al Cliente|@|Simulación CDTRespuesta2.pdf\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SF-00006\"," +
+                        "                    \"href\": \"7d4c9574-b2b2-4b09-8bab-ebef2f0ef775\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Respuesta Ente de Control|@|CONSULTA WEBSERVICE IDM.docx\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"PE-LE-00031\"," +
+                        "                    \"href\": \"0ea70138-4837-432b-8d84-b6cdb156913a\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Respuesta al Cliente|@|TOBE PQRs.pdf\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SF-00006\"," +
+                        "                    \"href\": \"8af22b6d-0cc7-4458-8a72-2dd33a2e8244\"" +
+                        "                }" +
+                        "            }," +
+                        "            {" +
+                        "                \"name\": \"Soporte de Pago|@|pantalla con campos Fraude.jpg\"," +
+                        "                \"createdDate\": \"2024-03-07T09:48:51.000-0500\"," +
+                        "                \"link\": {" +
+                        "                    \"rel\": \"SE-SF-00004\"," +
+                        "                    \"href\": \"5cb9d13a-61d5-435b-b63b-255021a48b47\"" +
+                        "                }" +
+                        "            }" +
+                        "        ]," +
+                        "        \"ocurrenceDate\": \"2024-03-05\"," +
+                        "        \"remainingAttachmentDays\": 0.0," +
+                        "        \"reviewProcessStartDate\": \"2024-03-06T17:46:18.000-0500\"" +
+                        "    }" +
+                        "}");
         return jsonObject;
     }
 

@@ -138,5 +138,23 @@ public class PqrCells {
         return jsonObject.toString();
     }
 
+    //https://qa-cellsaso.work.co.nextgen.igrupobbva/salesforce-issue-tracker/v0/issues/5007j00000Gw8rkAAB
+    @CrossOrigin(origins = "*")
+    @GetMapping(value = "salesforce-issue-tracker/v0/issues/{case-id}", produces="application/json")
+    public @ResponseBody String getIssueASO(@PathVariable(value = "case-id") String caseId) {
+
+        JSONObject jsonObject = PqrCellsService.getIssueAso();
+        return jsonObject.toString();
+    }
+
+    //https://cellsaso.live.co.nextgen.igrupobbva/salesforce-issue-tracker/v0/issues?targetUserId=01-91251449
+    @CrossOrigin(origins = "*")
+    @GetMapping(value = "salesforce-issue-tracker/v0/issues", produces="application/json")
+    public @ResponseBody String listIssuesASO(@RequestParam("targetUserId") String targetUserId) {
+
+        JSONObject jsonObject = PqrCellsService.getListIssuesAso();
+        return jsonObject.toString();
+    }
+
 
 }

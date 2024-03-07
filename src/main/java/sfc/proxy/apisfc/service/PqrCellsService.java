@@ -3441,4 +3441,188 @@ public class PqrCellsService {
                 "}");
         return jsonObject;
     }
+
+
+    public static JSONObject getIssueAso() {
+
+        JSONObject jsonObject = new JSONObject("");
+        return jsonObject;
+    }
+
+    public static JSONObject getListIssuesAso() {
+
+        JSONObject jsonObject = new JSONObject("{" +
+                        "    \"data\": [" +
+                        "        {" +
+                        "            \"id\": \"00328697\"," +
+                        "            \"subject\": \"Superfinanciera - 20\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"menju.abg.22@gmail.com\"," +
+                        "                        \"contactType\": \"Email\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"500Dm00000GBFAQIA5\"," +
+                        "            \"origin\": \"10\"," +
+                        "            \"internalIssueId\": \"500Dm00000GBFAQIA5\"," +
+                        "            \"creationDate\": \"2023-10-13T15:05:06.000-0500\"," +
+                        "            \"classification\": \"Endosos de Seguros\"," +
+                        "            \"closeDate\": \"2023-10-31T13:15:57.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2023-11-07T17:01:00.000-0500\"" +
+                        "        }," +
+                        "        {" +
+                        "            \"id\": \"00268344\"," +
+                        "            \"subject\": \"Superfinanciera - 99\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"menju.abg.22@gmail.com\"," +
+                        "                        \"contactType\": \"Email\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"500Dm000005jb0HIAQ\"," +
+                        "            \"origin\": \"10\"," +
+                        "            \"internalIssueId\": \"500Dm000005jb0HIAQ\"," +
+                        "            \"creationDate\": \"2023-05-10T15:03:50.000-0500\"," +
+                        "            \"classification\": \"Seguros\"," +
+                        "            \"closeDate\": \"2023-05-21T08:46:29.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2023-06-01T17:01:00.000-0500\"" +
+                        "        }," +
+                        "        {" +
+                        "            \"id\": \"00265093\"," +
+                        "            \"subject\": \"Superfinanciera - 99\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"menju.abg.22@gmail.com\"," +
+                        "                        \"contactType\": \"Email\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"500Dm000001AOPtIAO\"," +
+                        "            \"origin\": \"10\"," +
+                        "            \"internalIssueId\": \"500Dm000001AOPtIAO\"," +
+                        "            \"creationDate\": \"2023-05-02T15:05:09.000-0500\"," +
+                        "            \"classification\": \"Seguros\"," +
+                        "            \"closeDate\": \"2023-05-04T11:04:45.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2023-05-24T17:01:00.000-0500\"" +
+                        "        }," +
+                        "        {" +
+                        "            \"id\": \"00262722\"," +
+                        "            \"subject\": \"Superfinanciera - 7\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"menju.abg.22@gmail.com\"," +
+                        "                        \"contactType\": \"Email\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"500Dm0000019gGIIAY\"," +
+                        "            \"origin\": \"10\"," +
+                        "            \"internalIssueId\": \"500Dm0000019gGIIAY\"," +
+                        "            \"creationDate\": \"2023-04-25T08:08:35.000-0500\"," +
+                        "            \"classification\": \"Seguros\"," +
+                        "            \"closeDate\": \"2023-04-27T16:36:32.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2023-05-03T17:01:00.000-0500\"" +
+                        "        }," +
+                        "        {" +
+                        "            \"id\": \"00242030\"," +
+                        "            \"subject\": \"Superfinanciera - 99\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"menju.abg.22@gmail.com\"," +
+                        "                        \"contactType\": \"Email\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"500Dm0000018d1XIAQ\"," +
+                        "            \"origin\": \"10\"," +
+                        "            \"internalIssueId\": \"500Dm0000018d1XIAQ\"," +
+                        "            \"creationDate\": \"2023-02-25T08:07:56.000-0500\"," +
+                        "            \"classification\": \"Seguros\"," +
+                        "            \"closeDate\": \"2023-03-13T13:53:03.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2023-03-21T17:00:00.000-0500\"" +
+                        "        }," +
+                        "        {" +
+                        "            \"id\": \"00230143\"," +
+                        "            \"subject\": \"Revisión y/o liquidación - Liquidación de seguros\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"menju.abg.22@gmail.com\"," +
+                        "                        \"contactType\": \"Email\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"500Dm00000187h6IAA\"," +
+                        "            \"origin\": \"01\"," +
+                        "            \"internalIssueId\": \"500Dm00000187h6IAA\"," +
+                        "            \"creationDate\": \"2023-01-25T09:50:03.000-0500\"," +
+                        "            \"classification\": \"Liquidación de seguros\"," +
+                        "            \"closeDate\": \"2023-02-02T09:51:28.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2023-02-15T17:01:00.000-0500\"" +
+                        "        }," +
+                        "        {" +
+                        "            \"id\": \"00227809\"," +
+                        "            \"subject\": \"Revisión y liquidación - Reestructuración deuda\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"a@b.com\"," +
+                        "                        \"contactType\": \"No Aplica\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"500Dm00000183yoIAA\"," +
+                        "            \"origin\": \"01\"," +
+                        "            \"internalIssueId\": \"500Dm00000183yoIAA\"," +
+                        "            \"creationDate\": \"2023-01-19T11:45:42.000-0500\"," +
+                        "            \"classification\": \"Solicitud de documentos\"," +
+                        "            \"closeDate\": \"2023-01-28T09:31:27.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2023-02-09T17:01:00.000-0500\"" +
+                        "        }," +
+                        "        {" +
+                        "            \"id\": \"00200202\"," +
+                        "            \"subject\": \"Indebida atención - Trato inadecuado en oficina\"," +
+                        "            \"status\": \"07\"," +
+                        "            \"issuer\": {" +
+                        "                \"fullName\": \"NELSON EDUARDO MENJURA GONZALEZ\"," +
+                        "                \"contactDetails\": [" +
+                        "                    {" +
+                        "                        \"contact\": \"NELSON@BBVA.COM, EL BANCO, MAGDALENA, COLOMBIA\"," +
+                        "                        \"contactType\": \"Address\"" +
+                        "                    }" +
+                        "                ]" +
+                        "            }," +
+                        "            \"description\": \"5003p00002kx8nKAAQ\"," +
+                        "            \"origin\": \"01\"," +
+                        "            \"internalIssueId\": \"5003p00002kx8nKAAQ\"," +
+                        "            \"creationDate\": \"2022-11-02T15:18:48.000-0500\"," +
+                        "            \"classification\": \"Servicio brindado Oficina\"," +
+                        "            \"closeDate\": \"2022-11-09T11:27:10.000-0500\"," +
+                        "            \"targetedCompletionDate\": \"2022-11-25T17:01:00.000-0500\"" +
+                        "        }" +
+                        "    ]" +
+                        "}");
+        return jsonObject;
+    }
 }

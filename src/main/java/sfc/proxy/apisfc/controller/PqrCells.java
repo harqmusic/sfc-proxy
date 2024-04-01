@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import sfc.proxy.apisfc.service.AsoMovementsService;
 import sfc.proxy.apisfc.service.PqrCellsService;
 import sfc.proxy.apisfc.service.TopicResponse;
 
@@ -156,5 +156,51 @@ public class PqrCells {
         return jsonObject.toString();
     }
 
+    //https://cellsaso.live.co.nextgen.igrupobbva/financial-overview/v0/financial-overview?customer.id=CC000001143372815&contracts.productType=ACCOUNTS (CARDS/LOANS)
+    //https://des.salesforceaso.bbva.com.co/PQRCODEVPRI01/financial-overview/v0/financial-overview?customer.id=CC000001143372815&contracts.productType=ACCOUNTS (CARDS/LOANS)
+    @CrossOrigin(origins = "*")
+    @GetMapping(value = "financial-overview/v0/financial-overview", produces="application/json")
+    public @ResponseBody String getFinancialOverviewAso(@RequestParam("customer.id") String customerId, @RequestParam("contracts.productType") String contractsProductType) {
+        if(contractsProductType.equals("ACCOUNTS")) {
+            JSONObject jsonObject = AsoMovementsService.getFinancialOverviewAccountsAso();
+            return jsonObject.toString();
+        } else if(contractsProductType.equals("CARDS")) {
+            JSONObject jsonObject = AsoMovementsService.getFinancialOverviewCardsAso();
+            return jsonObject.toString();
+        } else if(contractsProductType.equals("LOANS")) {
+            JSONObject jsonObject = AsoMovementsService.getFinancialOverviewLoansAso();
+            return jsonObject.toString();
+        } else {return  "ERROR: Tipo de producto INVÁLIDO";}
+    }
+
+    //https://cellsaso.live.co.nextgen.igrupobbva/accounts/v0/accounts/00130144000200934643/transactions
+    //https://des.salesforceaso.bbva.com.co/PQRCODEVPRI01/accounts/v0/accounts/00130144000200934643/transactions
+    @CrossOrigin(origins = "*")
+    @GetMapping(value = "accounts/v0/accounts/{client-id}/transactions", produces="application/json")
+    public @ResponseBody String getAccountTransactionsAso(@PathVariable(value = "client-id") String clientId) {
+
+        JSONObject jsonObject = AsoMovementsService.getAccountTransactionsAso();
+        return jsonObject.toString();
+    }
+
+    //https://cellsaso.live.co.nextgen.igrupobbva/cards/v1/cards/5406992949500331/transactions
+    //https://des.salesforceaso.bbva.com.co/PQRCODEVPRI01/cards/v1/cards/5406992949500331/transactions
+    @CrossOrigin(origins = "*")
+    @GetMapping(value = "cards/v1/cards/{client-id}/transactions", produces="application/json")
+    public @ResponseBody String getCardTransactionsAso(@PathVariable(value = "client-id") String clientId) {
+
+        JSONObject jsonObject = AsoMovementsService.getCardTransactionsAso();
+        return jsonObject.toString();
+    }
+
+    //https://cellsaso.live.co.nextgen.igrupobbva/loans/v1/loans/{client-id}/transactions
+    //https://des.salesforceaso.bbva.com.co/PQRCODEVPRI01/loans/v1/loans/{client-id}/transactions
+    @CrossOrigin(origins = "*")
+    @GetMapping(value = "loans/v1/loans/{client-id}/transactions", produces="application/json")
+    public @ResponseBody String getLoanTransactionsAso(@PathVariable(value = "client-id") String clientId) {
+
+        JSONObject jsonObject = AsoMovementsService.getLoanTransactionsAso();
+        return jsonObject.toString();
+    }
 
 }

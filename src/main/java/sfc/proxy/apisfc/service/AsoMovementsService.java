@@ -1320,10 +1320,10 @@ public class AsoMovementsService {
                         "    \"pagination\": {" +
                         "        \"links\": {" +
                         "            \"first\": \"/loans/v1/loans/00130018009684013504/transactions\"," +
-                        "            \"last\": \"/loans/v1/loans/00130018009684013504/transactions?paginationKey=LAST\"," +
-                        "            \"next\": \"/loans/v1/loans/00130018009684013504/transactions?paginationKey=2&pageSize=20\"" +
                         "        }," +
                         "        \"page\": 1," +
+                        "        \"totalPages\": 1," +
+                        "        \"totalElements\": 2," +
                         "        \"pageSize\": 20" +
                         "    }" +
                         "}");
@@ -1331,3 +1331,4 @@ public class AsoMovementsService {
     }
 
 }
+

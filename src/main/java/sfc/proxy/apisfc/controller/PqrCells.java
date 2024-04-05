@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import sfc.proxy.apisfc.service.AsoMovementsService;
+import sfc.proxy.apisfc.service.ContractsService;
 import sfc.proxy.apisfc.service.PqrCellsService;
 import sfc.proxy.apisfc.service.TopicResponse;
 
@@ -96,7 +97,7 @@ public class PqrCells {
     @GetMapping(value = "contracts/v0/contracts", produces="application/json")
     public @ResponseBody String getContractsAso(@RequestParam("customer-id") String productId) {
 
-        JSONObject jsonObject = PqrCellsService.getContractsAso();
+        JSONObject jsonObject = ContractsService.getContractsAso();
         return jsonObject.toString();
     }
 
